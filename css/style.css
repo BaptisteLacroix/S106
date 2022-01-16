@@ -1,22 +1,59 @@
 body {
-    background-color: azure;
+    padding: 0;
+    margin: 0;
 }
 
+/* couleurs
+
+#f7931a = orange
+grey
+#302B2B = gris/noir
+#454242 = gris/noir
+#000000 = noir
+#191818 = noir
+#262222 = noir
+
+*/
 
 /* main */
 
 main {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(107,100,92,1) 100%);
     display: flex;
-    width: 70%;
+    max-width: 100%;
     height: 100vh;
     margin: 5% auto;
     background-color: grey;
 }
 
+/* Menu  a gauche */
+
+div.left {
+    position: fixed;
+    height: 100vh;
+    flex: 0.3;
+    max-width: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+/* contenu de droite */
+
+div.right {
+    float: right;
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
 /* Titres */
 
-h1 {
-    color: white;
+.left > h1 {
+    color: #f7931a;
     margin: 5% auto;
 }
 
@@ -28,51 +65,33 @@ ul {
     list-style: none;
 }
 
-ul > li {
+.left > section > ul > li {
     margin: 10%;
     list-style: none;
+    background: rgb(226,143,65);
+    background: linear-gradient(90deg, rgba(226,143,65,1) 10%, rgba(145,89,25,1) 91%);
+    display: block;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
 }
 
-ul > li > a {
+.left > section > ul > li:hover {
+    transform: scale(1.2);
+}
+
+.left > section > ul > li > a {
     color: white;
     text-decoration: none;
-    font-size: 50px;
     font-weight: bold;
 }
-
-/* Menu  a gauche */
-
-div.left {
-    flex: 0.5;
-    float: left;
-    max-width: 60%;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center;
-}
-
-/* Image a droite */
-
-div.right {
-    flex: 0.5;
-    float: right;
-    max-width: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-img#LogoBitcoin {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-
 /* hyperliens */
 
 a:hover {
-    color: red;
+    color: white;
 }
 
 /* Citation */
