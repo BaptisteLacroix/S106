@@ -1,0 +1,83 @@
+body {
+    background-color: azure;
+}
+
+
+/* main */
+
+main {
+    display: flex;
+    width: 70%;
+    height: 100vh;
+    margin: 5% auto;
+    background-color: grey;
+}
+
+/* Titres */
+
+h1 {
+    color: white;
+    margin: 5% auto;
+}
+
+/* Style des listes */
+
+ul {
+    padding: 0;
+    display: block;
+    list-style: none;
+}
+
+ul > li {
+    margin: 10%;
+    list-style: none;
+}
+
+ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Menu  a gauche */
+
+div.left {
+    flex: 0.5;
+    float: left;
+    max-width: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+/* Image a droite */
+
+div.right {
+    flex: 0.5;
+    float: right;
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+img#LogoBitcoin {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/* hyperliens */
+
+a:hover {
+    color: red;
+}
+
+/* Citation */
+
+cite > a {
+    color: black;
+    text-decoration: none;
+}
