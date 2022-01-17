@@ -91,6 +91,7 @@ img#LogoBitcoin {
     width: 50%;
     transition: 1s;
 }
+
 img#LogoBitcoin:hover {
     transform: scale(1.5);
 }
