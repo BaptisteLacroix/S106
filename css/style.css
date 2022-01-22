@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
     /*background: rgb(0,0,0);
     background: linear-gradient(120deg, #090909 0%, #18181D 100%); */
@@ -12,19 +14,6 @@ body {
     color: white;
 }
 
-
-/* couleurs
-
-#f7931a = orange
-grey
-#302B2B = gris/noir
-#454242 = gris/noir
-#000000 = noir
-#191818 = noir
-#262222 = noir
-
-*/
-
 /* Nav */
 
 nav {
@@ -37,19 +26,25 @@ nav {
 }
 
 nav > ul > li > h1 {
-    color: #f7931a;
+    color: #ffffff;
+    margin: 0;
+}
+
+nav > ul > li > h1:hover {
+    color: #FFA500;
 }
 
 nav > ul > li > a {
-    color: #f7931a;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 nav > ul > li {
     list-style: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 20px;
     cursor: pointer;
     transition: 1s;
 }
@@ -63,8 +58,8 @@ nav > ul > li > img#LogoBitcoin {
 
 nav > ul > li:hover {
     transform: scale(1);
+    border-bottom: orange solid 2px;
 }
-
 
 /* Style des listes */
 
@@ -135,7 +130,7 @@ main {
 /* hyperliens */
 
 a:hover {
-    color: white;
+    color: #FFA500;
 }
 
 /* Citation */
