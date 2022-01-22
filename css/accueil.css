@@ -1,7 +1,6 @@
 body {
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(107,100,92,1) 100%);
-    display: flex;
+    background: linear-gradient(120deg, #090909 0%, #252527 100%);
     width: 70%;
     height: 100vh;
     margin: auto;
@@ -14,18 +13,23 @@ grey
 #302B2B = gris/noir
 #454242 = gris/noir
 #000000 = noir
-#191818 = noir
-#262222 = noir
+#090909 = noir
+#151517 = noir
 
 */
 
 /* main */
 
-
+.boite {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
 
 /* Titres */
 
-.left > h1 {
+.boite > .left > h1 {
     color: #f7931a;
     margin: 5% auto;
 }
@@ -38,7 +42,7 @@ ul {
     list-style: none;
 }
 
-.left > section > ul > li {
+.boite > .left > section > ul > li {
     margin: 10%;
     list-style: none;
     background: rgb(226,143,65);
@@ -49,14 +53,15 @@ ul {
     font-size: 1em;
     text-align: center;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     transition: 1s;
 }
 
-.left > section > ul > li:hover {
+.boite > .left > section > ul > li:hover {
     transform: scale(1.2);
 }
 
-.left > section > ul > li > a {
+.boite > .left > section > ul > li > a {
     color: white;
     text-decoration: none;
     font-size: 50px;
@@ -65,7 +70,7 @@ ul {
 
 /* Menu  a gauche */
 
-div.left {
+.boite > div.left {
     flex: 0.5;
     float: left;
     max-width: 60%;
@@ -76,7 +81,7 @@ div.left {
 
 /* Image a droite */
 
-div.right {
+.boite div.right {
     flex: 0.5;
     float: right;
     max-width: 100%;
@@ -84,22 +89,22 @@ div.right {
     margin-bottom: auto;
 }
 
-img#LogoBitcoin {
+.boite div.right > section > img#LogoBitcoin {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 40%;
     transition: 1s;
 }
 
-img#LogoBitcoin:hover {
+.boite div.right > section > img#LogoBitcoin:hover {
     transform: scale(1.5);
 }
 
 /* hyperliens */
 
 a:hover {
-    color: white;
+    color: black;
 }
 
 /* Citation */

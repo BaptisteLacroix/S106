@@ -1,0 +1,27 @@
+Index: .idea/sonarlint/issuestore/index.pb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\nA\n\u0011perspectives.html\u0012,2\\5\\25864cf30472ef296f7aad6b908730524b79510f\n;\n\u000Bauteurs.txt\u0012,a\\c\\ac30d170418025e2b6fcd852c5597674b2d169ee\nI\n\u0019circulation&creation.html\u0012,c\\1\\c1c5818bf3da8e26bb295cf189fe68df405be839\n:\n\nindex.html\u0012,f\\6\\f6013a00b362253c64368d6eebc50ea2131754e2\n=\n\rcss/style.css\u0012,1\\2\\126b0f8c1ec95fb3a2541745bfc21365b438d668
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/sonarlint/issuestore/index.pb b/.idea/sonarlint/issuestore/index.pb
+--- a/.idea/sonarlint/issuestore/index.pb	
++++ b/.idea/sonarlint/issuestore/index.pb	
+@@ -1,13 +1,3 @@
+ 
+ A
+-perspectives.html,2\5\25864cf30472ef296f7aad6b908730524b79510f
+-;
+-auteurs.txt,a\c\ac30d170418025e2b6fcd852c5597674b2d169ee
+-I
+-circulation&creation.html,c\1\c1c5818bf3da8e26bb295cf189fe68df405be839
+-:
+-
+-index.html,f\6\f6013a00b362253c64368d6eebc50ea2131754e2
+-=
+-
+-css/style.css,1\2\126b0f8c1ec95fb3a2541745bfc21365b438d668
+\ No newline at end of file
++perspectives.html,2\5\25864cf30472ef296f7aad6b908730524b79510f
+\ No newline at end of file
