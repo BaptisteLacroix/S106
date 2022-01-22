@@ -19,9 +19,12 @@ body {
 
 /* Titres */
 
-.boite > .left > h1 {
+.boite > .left > ul > li > a {
     color: #f7931a;
     margin: 5% auto;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* Style des listes */
