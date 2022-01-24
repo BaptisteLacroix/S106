@@ -152,6 +152,19 @@ main {
     height: auto;
 }
 
+/* Titres */
+
+h1, h2, h3 {
+    color: #FFA500;
+}
+
+/* balise bold */
+
+b {
+    color: #FFA500;
+}
+
+
 /* hyperliens */
 
 a:hover {
