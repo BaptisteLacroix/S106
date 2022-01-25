@@ -47,7 +47,7 @@ nav > div.nav-left > ul > li > a {
     padding: 0;
 }
 
-nav > div.nav-left  > ul > li > h1:hover {
+nav > div.nav-left > ul > li > h1:hover {
     color: #FFA500;
 }
 
@@ -162,6 +162,55 @@ h1, h2, h3 {
 
 b {
     color: #FFA500;
+}
+
+#iframeBitcoin1 {
+    height: 669px;
+    background-color: #1D2330;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #282E3B;
+    border-radius: 4px;
+    text-align: right;
+    line-height: 14px;
+    font-size: 12px;
+    font-feature-settings: normal;
+    box-shadow: inset 0 -20px 0 0 #262B38;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#iframeBitcoin2 {
+    height: 649px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#iframeBitcoin2 > iframe {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%
+}
+
+#iframeBitcoin3 {
+    height:560px;
+    background-color: #1D2330;
+    overflow:hidden;
+    box-sizing: border-box;
+    border: 1px solid #282E3B;
+    border-radius: 4px;
+    text-align: right;
+    line-height:14px;
+    font-size: 12px;
+    font-feature-settings: normal;
+    box-shadow: inset 0 -20px 0 0 #262B38;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 
