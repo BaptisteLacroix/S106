@@ -1,5 +1,6 @@
 body {
     background-color: #1a1a1a;
+    display: flex;
     padding: 0;
     margin: auto;
     width: 70%;

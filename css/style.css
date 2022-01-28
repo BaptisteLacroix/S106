@@ -164,6 +164,10 @@ b {
     color: #FFA500;
 }
 
+b > i {
+    color: #FFA500;
+}
+
 #iframeBitcoin1 {
     height: 669px;
     background-color: #1D2330;
