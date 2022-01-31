@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body {
-    /*background: rgb(0,0,0);
-    background: linear-gradient(120deg, #090909 0%, #18181D 100%); */
     background-color: #1a1a1a;
     padding: 0;
     margin: 0;
@@ -38,7 +36,7 @@ nav > div.nav-right {
     margin-right: 5%;
 }
 
-nav > div.nav-left > ul > li > a {
+nav > div.nav-left > ol > li > a {
     color: #ffffff;
     font-size: 1.2em;
     text-decoration: none;
@@ -47,37 +45,43 @@ nav > div.nav-left > ul > li > a {
     padding: 0;
 }
 
-nav > div.nav-left > ul > li > h1:hover {
+nav > div.nav-left > ol > li:hover > a {
     color: #FFA500;
 }
 
-nav > div.nav-right > ul > li > a {
+nav > div.nav-right > ol > li > a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
 }
 
-nav ul > li {
+nav ol > li {
     list-style: none;
     display: inline-block;
     padding: 15px 20px;
     cursor: pointer;
-    transition: 1s; /* On garde ? */
+    /*transition: 1s; /* On garde ? */
 }
 
-nav ul > li:hover {
-    transform: scale(1);
+nav ol > li:hover {
     border-bottom: orange solid 2px;
 }
 
-nav > div.nav-right > ul > li a:hover {
+nav > div.nav-right > ol > li:hover > a {
     color: #FFA500;
 }
 
 /* Style des listes */
 
 ul {
+    padding: 0;
+    margin: 0;
+    display: block;
+    list-style: none;
+}
+
+nav ol {
     padding: 0;
     margin: 0;
     display: block;
@@ -156,6 +160,11 @@ main {
 
 h1, h2, h3 {
     color: #FFA500;
+}
+
+/* On garde ca ? */
+h1 {
+    text-align: center;
 }
 
 /* balise bold */
@@ -238,4 +247,24 @@ a:hover {
 cite > a {
     color: white;
     text-decoration: none;
+}
+
+/* footer */
+
+footer {
+    display: block;
+    margin: 2% 5px 5%;
+    padding: 1%;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    text-align: center;
+}
+
+footer > p > a{
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    color: #FFA500;
 }

@@ -1,6 +1,6 @@
 body {
-    background-color: #1a1a1a;
     display: flex;
+    background-color: #1a1a1a;
     padding: 0;
     margin: auto;
     width: 70%;
@@ -20,7 +20,7 @@ body {
 
 /* Titres */
 
-.boite > .left > ul > li > a {
+.boite > .left > ol > li > a {
     color: #f7931a;
     margin: 5% auto;
     font-size: 50px;
@@ -32,11 +32,19 @@ body {
 
 ul {
     padding: 0;
+    margin: 0;
     display: block;
     list-style: none;
 }
 
-.boite > .left > section > ul > li {
+ol {
+    padding: 0;
+    margin: 0;
+    display: block;
+    list-style: none;
+}
+
+.boite > .left > section > ol > li {
     margin: 10%;
     list-style: none;
     background: rgb(226,143,65);
@@ -50,11 +58,11 @@ ul {
     transition: 1s;
 }
 
-.boite > .left > section > ul > li:hover {
+.boite > .left > section > ol > li:hover {
     transform: scale(1.2);
 }
 
-.boite > .left > section > ul > li > a {
+.boite > .left > section > ol > li > a {
     color: white;
     text-decoration: none;
     font-size: 20px;
