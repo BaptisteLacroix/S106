@@ -18,7 +18,7 @@ body {
     display: none;
 }
 
-#drop{
+#drop {
     display: none;
 }
 
@@ -104,22 +104,6 @@ nav ol > li {
         margin-right: 0;
     }
 
-    label#boutonMenu {
-        display: block;
-        padding: 15px 20px;
-        margin-left: auto;
-        margin-right: auto;
-        color: #ffffff;
-        font-size: 1.2em;
-        font-weight: bold;
-        transition: 1s;
-    }
-
-    label#boutonMenu:hover {
-        color: #FFA500;
-        /*border-bottom: orange solid 2px;*/
-    }
-
     #drop ~ div.nav-left > ol {
         display: none;
     }
@@ -141,12 +125,53 @@ nav ol > li {
         cursor: pointer;
     }
 
-    nav ol > li:hover > a{
+    nav ol > li:hover > a {
         border-bottom: orange solid 2px;
     }
 
     nav > div.nav-right > ol > li:hover > a {
         color: #FFA500;
+    }
+
+    label#boutonMenu {
+        display: block;
+        /*padding: 15px 20px;*/
+        margin-left: auto;
+        margin-right: auto;
+        color: #ffffff;
+        font-size: 1.2em;
+        font-weight: bold;
+        transition: 1s;
+    }
+
+    label#boutonMenu:hover {
+        color: #FFA500;
+        animation: bounce 2s infinite;
+        /*border-bottom: orange solid 2px;*/
+    }
+
+    .arrowMenu {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40px;
+        height: 40px;
+        border-bottom: 6px solid;
+        border-left: 6px solid;
+        transform: rotate(-45deg);
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            /*transform: rotate(-45deg);*/
+            transform: translateY(0) rotate(-45deg);
+        }
+        40% {
+            transform: translateY(-15px) rotate(-45deg);
+        }
+        60% {
+            transform: translateY(-10px) rotate(-45deg);
+        }
     }
 }
 
