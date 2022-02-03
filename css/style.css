@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:wght@300&display=swap');
 
 body {
     background-color: #121214;
     padding: 0;
     margin: 0;
+    font-weight: 200;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -11,6 +12,7 @@ body {
     box-sizing: border-box;
     color: white;
 }
+
 
 /* Nav */
 
@@ -24,10 +26,11 @@ body {
 
 nav {
     display: flex;
-    margin: 2% 0 5%;
+    margin-bottom: 2%;
     padding: 1%;
     background-color: #2c2c2c;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    border-top: orange solid 20px;
 }
 
 nav > div.nav-left {
@@ -47,7 +50,7 @@ nav > div.nav-left > ol > li > a {
     color: #ffffff;
     font-size: 1.2em;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 200;
     margin: 0;
     padding: 0;
 }
@@ -59,15 +62,17 @@ nav > div.nav-left > ol > li:hover > a {
 nav > div.nav-right > ol > li > a {
     color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
+    font-weight: 200;
+    font-size: 1.1em;
 }
 
 nav ol > li {
     list-style: none;
     display: inline-block;
-    padding: 15px 20px;
+    padding: 10px 20px;
     cursor: pointer;
+    border-bottom: rgba(0, 0, 0, 0) solid 2px;
+    border-top: rgba(0, 0, 0, 0) solid 2px;
     /*transition: 1s; /* On garde ? */
 }
 
@@ -140,22 +145,21 @@ nav ol > li {
         color: #ffffff;
         font-size: 1.2em;
         font-weight: bold;
-        transition: 1s;
+        transition: all 1s ease-in-out; /* on garde ? */
     }
 
     #drop:not(:checked) + label#boutonMenu {
-        color: #FFA500;
+        color: #FFF;
         animation: bounce 2s infinite;
         /*border-bottom: orange solid 2px;*/
     }
 
-    #drop:checked + label#boutonMenu{
+    #drop:checked + label#boutonMenu {
         color: #FFA500;
-        transform: rotate(135deg);
         animation: bounce2 2s infinite;
     }
 
-    .arrowMenu {
+    label.arrowMenu {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -202,7 +206,7 @@ nav ol > li {
         margin: 0 3% 3%;
         background-color: #202124;
         border-radius: 30px;
-        box-shadow:  0 -2px 10px rgba(0, 0, 0, 1);
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
         transition: 1s;
     }
 }
@@ -245,7 +249,7 @@ main {
         background-color: #202124;
         border-radius: 30px;
         transition: 1s;
-        box-shadow:  0 -2px 10px rgba(0, 0, 0, 1);
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
     }
 }
 
@@ -256,7 +260,7 @@ main {
     margin: 0 3% 3%;
     background-color: #202124;
     border-radius: 30px;
-    box-shadow:  0 -2px 10px rgba(0, 0, 0, 1);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
     transition: 1s;
 }
 
@@ -290,18 +294,27 @@ main {
 
 h1, h2, h3 {
     color: #FFA500;
-    font-weight: normal;
+    font-weight: 300;
 }
 
+
 /* On garde ca ? */
+
 h1 {
     text-align: center;
+    margin: 11% 0;
+    font-size: 38px;
+    line-height: 2;
+    font-weight: 500;
 }
+
 
 /* balise bold */
 
 b {
     color: #FFA500;
+    font-weight: 500;
+    font-size: large;
 }
 
 b > i {
@@ -373,12 +386,14 @@ a:hover {
     color: #FFA500;
 }
 
+
 /* Citation */
 
 cite > a {
     color: white;
     text-decoration: none;
 }
+
 
 /* footer */
 
@@ -399,33 +414,28 @@ footer > p > a:hover {
     color: #FFA500;
 }
 
-
 div.content2 p {
-    margin: 2%;
     background-color: #2b2c30;
     padding: 2%;
-    border-radius: 12px;
-    border-top-left-radius: 0;
+    border-radius: 0 0 12px 12px;
     border-top: 1px solid orange;
-    margin-bottom: 4%;
+    margin: 2% 2% 4%;
     line-height: 1.9;
 }
 
 div.div {
-    margin: 2%;
-    background-color: #2b2c30;
-    padding: 2%;
     border-radius: 12px;
-    border-top-left-radius: 0;
-    border-top: 1px solid orange;
-    margin-bottom: 4%;
+    margin: 2% 2% 4%;
+    box-shadow: 0 0 15px 2px #0d0d0e;
+    background-color: #1c1d20;
+    padding: 2%;
 }
 
 strong {
     display: inline-block;
     margin-bottom: 1%;
-    font-weight: 600;
-    font-size: larger;
+    font-weight: 500;
+    font-size: large;
 }
 
 li.date {
@@ -435,7 +445,7 @@ li.date {
 }
 
 li.liste1 {
-    padding: 1%;
+    padding: 1.5% 1.5% 0;
     list-style-type: disc;
     margin-left: 5%;
 }

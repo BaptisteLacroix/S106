@@ -12,17 +12,32 @@ body {
 
 /* main */
 
-.boite {
-    display: flex;
+/* Menu  a gauche */
+
+div.left {
+    flex: 0.3;
+    float: left;
+    max-width: 60%;
     margin-top: auto;
     margin-bottom: auto;
-    background-color: #2c2c2c;
-    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    text-align: center;
+    background-color: #202124;
+}
+
+/* Image a droite */
+
+div.right {
+    flex: 0.7;
+    float: right;
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #121214;
 }
 
 /* Titres */
 
-.boite > .left > ol > li > a {
+.left > ol > li > a {
     color: #f7931a;
     margin: 5% auto;
     font-size: 50px;
@@ -46,7 +61,7 @@ ol {
     list-style: none;
 }
 
-.boite > .left > section > ol > li {
+.left > section > ol > li {
     margin: 10%;
     list-style: none;
     background: #f7931a;;
@@ -59,39 +74,15 @@ ol {
     transition: 1s;
 }
 
-.boite > .left > section > ol > li:hover {
-    transform: scale(1.2);
-}
-
-.boite > .left > section > ol > li > a {
+.left > section > ol > li > a {
     color: white;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
 }
 
-/* Menu  a gauche */
 
-.boite > div.left {
-    flex: 0.5;
-    float: left;
-    max-width: 60%;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center;
-}
-
-/* Image a droite */
-
-.boite div.right {
-    flex: 0.5;
-    float: right;
-    max-width: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.boite div.right > section > img#LogoBitcoin {
+div.right > section > img#LogoBitcoin {
     display: flex;
     margin-left: auto;
     margin-right: auto;
