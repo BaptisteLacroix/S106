@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Baptiste Lacroix & Léa Jiner">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Le Bitcoin : Enjeux monétaire, spéculatif et écologique</title>
 </head>
 
 <header>
     <nav>
+        <input id="drop" type="checkbox">
         <label for="drop" class="arrowMenu" id="boutonMenu">
             <!-- Home -->
         </label>
-        <input id="drop" type="checkbox">
         <div class="nav-left">
             <ol>
                 <li>
@@ -42,245 +42,373 @@
 </header>
 
 <body>
-<main>
-    <div id="content">
-        <div class="content2">
-            <div class="contentCenter">
-                <h1>Fonctionnement, Mode de Création et de Circulation </h1>
-            </div>
-        </div>
-        <section>
+    <main>
+        <div id="content">
             <div class="content2">
                 <div class="contentCenter">
-                    <h2>Histoire du bitcoin</h2>
-                    <p>Le bitcoin a besoin de <b>deux mécanismes sous-jacents</b> pour fonctionner : <a
-                            href="./circulation&creation.html#blockchain">la blockchain</a>
-                        et <a href="./circulation&creation.html#minage">le minage.</a>.</p>
+                    <h1>Fonctionnement, mode de création et de circulation du Bitcoin</h1>
                 </div>
             </div>
-            <div class="content2">
-                <div class="contentLeft">
-                    <h3 id="blockchain">La blockchain : c’est quoi ?</h3>
-                    <ul>
-                        <li>
-                            <p>
-                                Développée à partir de 2008, la blockchain est en premier lieu une technologie
-                                de <b>stockage</b> et de <b>transmission d’informations</b>.
-                                Cette technologie offre de hauts standards de <b>transparence</b> et de <b>sécurité</b>
-                                car elle fonctionne sans organe central de contrôle.
-                                Plus concrètement, <a href="./circulation&creation.html#blockchain">la blockchain</a>
-                                permet à ses utilisateurs <b> connectés en réseau </b> de partager des données <b>sans
-                                intermédiaire</b>.
-                            </p>
-                            <p><cite><a
-                                    href="https://www.economie.gouv.fr/entreprises/blockchain-definition-avantage-utilisation-application#"
-                                    target="_blank">economie.gouv.fr</a></cite></p>
-                            <p>
-                                <a href="./circulation&creation.html#blockchain">La blockchain</a> ou chaîne de blocs
-                                est une <b>base de données distribuée </b> qui contient <b>toutes les
-                                transactions sur bitcoin </b> réalisées jusqu'à présent.
-                                Ces transactions sont regroupées sous forme de "blocs" qui sont <b>sécurisés
-                                cryptographiquement </b> durant la phase de
-                                <a href="./circulation&creation.html#minage">minage.</a>
-                                et liés entre eux.
-                                La chaîne de blocs est accessible à <b>tous et à tout moment</b>. Elle ne peut être
-                                modifiée qu'avec l'accord de la <b>majorité du réseau</b> et leur puissance de calcul.
-                                Cela signifie qu'il est <b>pratiquement impossible</b> de la modifier rétroactivement,
-                                qu'elle n'a aucun point faible et qu'elle n'est pas vulnérable aux erreurs humaines.
-                            </p>
-                            <p><cite><a href="https://www.ig.com/fr/bitcoin-btc/comment-fonctionne-le-bitcoin"
-                                        target="_blank">ig.com</a></cite>
-                            </p>
-                        </li>
-                    </ul>
+            <section>
+                <div class="content2">
+                    <div class="contentCenter">
+                        <h2>Retour aux bases</h2>
+                        <p><strong>Qu’est-ce qu’une cryptomonnaie ?</strong><br />Une cryptomonnaie, appelée aussi
+                            cryptoactif, cryptodevise
+                            ou encore cybermonnaie, est
+                            une monnaie numérique émise de pair à pair (actif numérique), sans avoir recourt à une
+                            banque centrale mais en utilisant
+                            un réseau informatique décentralisé. Son fonctionnement repose sur les principes même de la
+                            cryptographie pour valiser
+                            des transactions et créer elle-même la devise.</p>
+                        <p><strong>Qu’est-ce qu’une devise ?</strong><br />Une devise est celle qui qualifie l’unité
+                            monétaire d’un pays
+                            étranger et est émise, dans la
+                            majorité des cas, par une banque centrale qui en assure le contrôle. En complément, on parle
+                            de monnaie fiat lorsqu’une
+                            monnaie est décrétée par l’Etat et que ce dernier en confie la gestion à une Banque
+                            centrale. Les monnaies fiat sont les
+                            monnaies principalement utilisées dans l’économie actuelle et les devises les plus échangées
+                            sont l’euro, le dollar
+                            américain, la livre sterling ainsi que le yen japonais.</p>
+                        <div class="div">On retrouve donc naturellement des similitudes et des différences entre une
+                            cryptomonnaie
+                            et une devise telles que :
+                            <ol>
+                                <li class="liste1">Il est possible d’utiliser les deux pour effectuer des paiements ou
+                                    les
+                                    utiliser comme
+                                    réserves de valeur.</li>
+                                <li class="liste1">Les deux reposent sur la confiance généralisée des consommateurs pour
+                                    servir comme moyen
+                                    d’échange.</li>
+                                <li class="liste1">La monnaie fiat est émise et controlée par les banques centrales et
+                                    le
+                                    Bitcoin est
+                                    produit et distribué par un
+                                    processus nommé « mining » mais n’est contrôlé par aucune banque centrale.</li>
+                                <li class="liste1">Une transaction en Bitcoin ne peut pas être annulée ou inversée,
+                                    contrairement aux
+                                    transactions avec des devises.</li>
+                                <li class="liste1">L’autorité centrale garantit la confiance et la sureté de la monnaie
+                                    fiat
+                                    alors que la
+                                    confiance dans les
+                                    cryptomonnaies est basée sur la technologie de la blockchain, que nous analyserons
+                                    plus
+                                    tard.</li>
+                            </ol>
+                        </div>
+                        <p>Ainsi, une cryptomonnaie permet d’effectuer des transactions directes entre individus, sans
+                            avoir recours à un
+                            intermédiaire, comme une banque.</p>
+                    </div>
                 </div>
-                <div class="contentRight">
-                    <h3 id="minage">Le minage, c’est quoi ?</h3>
-                    <ul>
-                        <li>
-                            <p>
-                                Le <a href="./circulation&creation.html#minage">minage</a>
-                                c’est le procédé par lequel les <b>transactions Bitcoin sont sécurisées</b>.
-                                A cette fin les mineurs effectuent avec leur matériel informatique <b>des calculs
-                                mathématiques pour le réseau Bitcoin </b>.
-                                Comme récompense pour leurs services, <b>ils collectent les bitcoins</b> nouvellement
-                                créés ainsi que les frais des transactions qu’ils confirment.
-                                Elle est <b>divisée par deux tous les quatre ans environ</b>. Le 12 mai 2020 cette
-                                récompense passera à 6,25 bitcoins par bloc.
-                            </p>
-                            <p><cite><a href="https://bitcoin.fr/le-minage-cest-quoi/"
-                                        target="_blank">bitcoin.fr</a></cite>
-                            </p>
-                        </li>
-                    </ul>
+                <div class="content2">
+                    <div class="contentLeft">
+                        <h2>L'essentiel en deux mots</h2>
+                        <p>En 2008, le japonais Satoshi Nakamoto met en ligne sur internet un article décrivant le
+                            fonctionnement d’un système
+                            d’échange numérique appuyé sur une nouvelle technologie, la blockchain. Sur ce système
+                            s’échange des actifs numériques
+                            appelés Bitcoins, et non des euros ou des dollars.</p>
+                        <p><strong>Qu’est-ce qu’un actif numérique ?</strong><br />Un actif numérique est un bien
+                            immatériel de format binaire
+                            incluant un droit de
+                            propriété. Ces actifs sont composés principalement de documents numériques (logiciels) et
+                            contenus multimédias (images,
+                            graphiques, sons et vidéos) qui sont soit en circulation, soit stockés sur des supports
+                            numériques (ordinateurs, disques
+                            durs…). Un actif numérique a obligatoirement une valeur financière qui varie selon l’offre
+                            et la demande. De nombreux
+                            autres actifs numériques se développent dans le domaine de la médecine, du vote de
+                            l’éducation, ect. Ainsi, la
+                            blockchain est une nouvelle catégorie d’actifs numériques.</p>
+                        <p>Si le Bitcoin constitue le cryptoactif le plus médiatisé et le plus valorisé, on recense tout
+                            de même plus de 1600
+                            actifs de ce type en 2018 dans le monde comme le ripple, l’etherium…</p>
+                        <p><strong>Comment crée-t-on ces actifs ?</strong><br />Ces actifs sont créés et échangés par
+                            les ordinateurs,
+                            connectés en réseau, grâce à des
+                            calculs mathématiques complexes, faisant appel à des techniques de cryptographie : c’est la
+                            raison pour laquelle on
+                            parle de cryptoactifs. La création de ces actifs a un nom : le minage.</p>
+                        <p>A la différence des monnaies classiques, le Bitcoin n’est donc pas émis par une autorité
+                            bancaire (par exemple,
+                            l’Autorité Bancaire Européenne (EBA) pour l’Union Européenne, mais sur le protocole
+                            blockchain du même nom.</p>
+                        <p>Lorsqu’il a été créé, le Bitcoin dispose d’un approvisionnement fixe et maximal de 21
+                            millions d’unités, ce qui le rend
+                            encore plus rare que l’or. Contrairement à la monnaie fiat, le Bitcoin n’est pas soumis à
+                            l’inflation et lorsque toutes
+                            les unités ont été créées, il n’est plus possible d’en avoir plus.</p>
+                        <p>Les cryptomonnaies peuvent être dépensées et reçues par tous, partout et en tout temps, sans
+                            avoir recours à une banque
+                            ou à un gouvernement. Voilà ce qui les rend aussi révolutionnaires. Si la majeure partie de
+                            la valeur d’une quelconque
+                            monnaie fiat semble découler de la dette, ce n’est pas le cas du Bitcoin. La valeur
+                            intrinsèque de ce dernier,
+                            c’est-à-dire sa valeur réelle et effective, dépasse la confiance de la communauté qui
+                            l’utilise. Le Bitcoin ne se repose
+                            pas sur un système d’endettement car sa valeur se résume à son efficacité en tant que moyen
+                            d’échange financier.</p>
+                        <p>On comprend de ce fait que Bitcoin a établi une nouvelle forme de confiance entre individus
+                            dans notre système monétaire
+                            global. Le système derrière Bitcoin est totalement transparent et basé sur des algorithmes
+                            et des calculs toujours plus
+                            complexes.</p>
+                    </div>
+                    <div class="contentRight">
+                        <h2>Quelques dates</h2>
+                        <ol class="date_ol">
+                            <li class="date"><b>2008</b> : Satoshi Nakamodo crée le protocole informatique du Bitcoin et publie
+                                le 31
+                                octobre 2008 le white paper,
+                                c’est-à-dire le véritable acte de naissance du Bictcoin (lien).</li>
+                            <li class="date"><b>2009</b> : Le 3 janvier, les premiers Bitcoins sont créés. Le 5 octobre, la
+                                première
+                                estimation de sa valeur est connue :
+                                0,001 dollar. Ce montant est défini grâce au coût de production en électricité que
+                                nécessite la création d’une unité de
+                                Bitcoin par un ordinateur.</li>
+                            <li class="date"><b>2010</b> : Le 22 mai, c’est le premier achat d’un bien réel en Bitcoin : deux
+                                pizzas
+                                achetées pour 10 000 Bitcoins. Le 12
+                                décembre, Satoshi Nakamoto se retire du projet Bitcoin en publiant un message sur le
+                                forum spécialisé « Bitcoin Talk »
+                                et passe le relais au développeur américain Gavin Andresen en lui confiant la clé
+                                d’alerte du protocole, clé nécessaire
+                                pour s’adresser instantanément à tous les ordinateurs qui constituent les nœuds du
+                                système.</li>
+                            <li class="date"><b>2011</b> : En février, le Bitcoin égale le dollar, puis égale l’euro quelques
+                                jours plus
+                                tard.</li>
+                            <li class="date"><b>2013</b> : Si le Bitcoin a eu une mauvaise réputation, c’est à cause du site
+                                Silk Road, un
+                                site internet répertorié sur le
+                                darknet permettant d’acheter et de vendre toutes sortes de produits illégaux, qui
+                                utilise comme mode de transaction la
+                                monnaie virtuelle Bitcoin.</li>
+                            <li class="date"><b>2013</b> : La Banque de France met en garde les personnes investissant dans le
+                                Bitcoin,
+                                contre les risques liés au
+                                cryptos-actifs (lien aspects négatifs du Bitcoin). Le 28 novembre, le Bitcoin atteint
+                                les 1000 dollars.</li>
+                            <li class="date"><b>2014</b> : Faillite de la première plateforme d’échanges de Bitcoins, Mt. Gox,
+                                après le vol
+                                de 650 000 Bitcoins, soit
+                                environ 285 millions de dollars. Le cours du Bitcoin chute fortement et durablement.
+                            </li>
+                            <li class="date"><b>2017</b> : Le cours du Bitcoin atteint son point le plus haut le 17 décembre
+                                2017, à près de
+                                19 891 dollars, puis retombe
+                                sous les 7 000 euros en mai 2018. En décembre 2017, le Bitcoin devient légitime grâce au
+                                lancement des contrats à terme.
+                                Ainsi, elle est traitée comme une matière première telle que l’or ou le pétrole.</li>
+                            <li class="date"><b>2018</b> : L’équivalent de 530 millions de dollars en crypto actifs est volé
+                                lors du
+                                piratage de la plateforme japonaise
+                                d’échanges Coincheck.</li>
+                            <li class="date"><b>2018</b> : Après une intense spéculation sur les autres cryptomonnaies,
+                                l’ensemble des
+                                valeurs du Bitcoin s’écroulent en
+                                quelques jours à mi janvier.</li>
+                            <li class="date"><b>2021</b> : En février du mois dernier, le Bitcoin atteint son nouveau point
+                                culminant
+                                historique à 47 000 dollars.</li>
+                        </ol>
+                        <p>Sa valeur augmente progressivement au cours des années, tandis que le nombre de Bitcoins en
+                            circulation ne cesse
+                            d’augmenter.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="content2">
-                <div class="contentLeft">
-                    <ul>
-                        <li>
-                            <p>Fonctionnement du <b>système de paiement bancaire :</b></p>
+                <div class="content2">
+                    <div class="contentLeft">
+                        <h2>La blockchain</h2>
+                        <p>La blockchain, une invention ingénieuse initialement créée pour la cryptomonnaie du Bitcoin,
+                            constitue la colonne
+                            vertébrale d’une nouvelle ère numérique. Mais qu’est-ce que c’est ?</p>
+                        <p><strong>Qu’est-ce c’est ?</strong><br />Une blockchain est un type particulier de base de
+                            données, décentralisée et
+                            non falsifiable. C’est un
+                            système très ingénieux qui garantit la confiance entre individus et le consensus collectif.
+                        </p>
+                        <p><cite>« Avant tout, l’utilité cruciale de la Blockchain est de garantir la validité d’une
+                                transaction en l’inscrivant non
+                                seulement sur un registre principal, mais aussi sur un système de registres distribués
+                                connectés, qui sont tous
+                                connectés via un mécanisme de validation sécurisé. » - Ian Khan, Conférencier TEDx,
+                                Auteur,
+                                Futurologue technologies</cite></p>
+                        <p>La blockchain est une technologie rigoureuse, sécurisée et idéale pour enregistrer et traiter
+                            des informations
+                            sensibles. L’aspect révolutionnaire sous-jacent de la blockchain est qu’elle se définit par
+                            le fait les processus ne
+                            sont pas exécutés par un mais par plusieurs ordinateurs en même temps.</p>
+                        <p>La confiance dans le Bitcoin est garantie par un registre immuable, transparent et
+                            incorruptible, géré par une
+                            communauté indépendante d’ordinateurs dans le monde entier. Il n’y a donc pas de
+                            gouvernements ou de banque centrale qui
+                            soient impliqués dans ce processus.</p>
+                        <p>Une blockchain n’est pas mise à jour ou validée par une seule personne, mais par des milliers
+                            voire des millions de
+                            membres d’une communauté. Et ce, dans un délai imparti. L’avantage ici est qu’au lieu de
+                            dépendre d’une institution
+                            centrale comme un gouvernement ou une banque, l’ensemble du réseau blockchain s’accorde sur
+                            une « réalité » commune, à
+                            savoir l’historique complet de toutes les transactions effectuées au sein même du réseau. On
+                            appelle cet accord un
+                            consensus.</p>
+                        <p>Chaque transaction effectuée sur le réseau et minutieusement enregistré et archivé en
+                            permanence. Ainsi, il n’est pas
+                            possible de modifier l’historique de ce registre ou d’émettre deux transactions avec le même
+                            avoir. On parlerait ici de
+                            double-dépense.</p>
+                        <p>La technologie de la blockchain est donc idéale pour effectuer des transactions entre deux
+                            individus qui nécessitent une
+                            vérification irréfutable et une pérennité, comme dans le cadre des cryptomonnaies telles que
+                            le Bitcoin.</p>
+                        <p><strong>Quel est le fonctionnement d’une blockchain ?</strong><br />La blockchain est
+                            constituée d’un réseau
+                            décentralisé de « nœuds » informatiques. Un nœud est un ordinateur connecté au réseau de la
+                            blockchain, qui choisit
+                            volontairement de rejoindre le réseau avec l’intention de gagner des Bitcoins. Ces
+                            ordinateurs sont donc connectés à un
+                            seul réseau en « peer to peer », pair à pair en français, sur internet.</p>
+                        <p>Dans une blockchain, les transactions sont stockées en blocs. Chaque nouveau bloc est généré
+                            en se référant au précédent
+                            et comprend un numéro d’identification unique appelé « hash ». Ces blocs constituent une
+                            chaine qui se poursuit
+                            indéfiniment, d’où le nom blockchain.</p>
+                        <p>En ce qui concerne les blockchains telles que Bitcoin (Bitcoin ayant le même nom pour la
+                            cryptomonnaie Bitcoin que pour
+                            le nom de sa blockchain), la confiance est basée sur des caractéristiques technologiques
+                            comme le fait que ces blocs
+                            sont visibles par le public. Cela dit, aucune transaction n’est ajoutée à un bloc sans avoir
+                            été préalablement vérifiée
+                            par un ou plusieurs ordinateurs du réseau. On appelle ces ordinateurs des « miner », soit
+                            mineur en français.</p>
+                        <p>Cette communauté garantit ainsi qu’aucune transaction frauduleuse n’est enregistrée dans une
+                            blockchain, ce qui rend ces
+                            transactions infalsifiables.</p>
+                    </div>
+                    <div class="contentRight">
+                        <h2>Le premier halving</h2>
+                        <p><strong>Qu’est-ce que le Halving Bitcoin ?</strong><br />Le halving est un événement durant
+                            lequel la récompense
+                            des mineurs qui créent du
+                            Bitcoin sera divisée par deux. Cet événement a lieu tous les quatre ans environ et le
+                            dernier halving, datant du 11 mai
+                            2020, a fait passer cette récompense de 12,5 à 6,25 Bitcoins. Il s’agit du troisième halving
+                            depuis la création du
+                            Bitcoin, après ceux de 2012 et 2016. La prime de minage du prochain halving passera donc à
+                            3,125 Bitcoins, et ainsi de
+                            suite.</p>
+                        <p>Ces halvings permettront d’atteindre en 2140 le maximum de 21 millions de Bitcoins en
+                            circulation, comme l’avait prévu
+                            Satoshi Nakamoto, lors de la création de cette monnaie virtuelle.</p>
+                        <p>Aujourd’hui, en 2021, il y a déjà plus de 18,3 millions de Bitcoins minés en circulation. Le
+                            halving étant aussi
+                            synonyme de hausse du cours du Bitcoin, le cours de celui-ci avait augmenté juste après les
+                            deux premiers halving. Et
+                            comme beaucoup d’actifs, le Bitcoin dépend de l’offre et de la demande. Ainsi, lorsque
+                            l’offre baisse, son cours a
+                            tendance à augmenter.</p>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="contentCenter">
+                        <h2>Le mining</h2>
+                        <p>Le mining, appelé minage en français, est essentiel au bon fonctionnement du réseau Bitcoin.
+                            Il permet au réseau pair à
+                            pair de vérifier les transactions et d’atteindre un consensus commun sans avoir recours à
+                            une autorité centrale. Chaque
+                            transaction est vérifiée par des mineurs qui reçoivent en récompense de nouvelles unités
+                            minées de cryptomonnaie. Tous
+                            les mineurs sont en concurrence pour résoudre des casse-têtes cryptographiques.</p>
+                        <p><strong>À quoi sert le mining ?</strong><br />Le mining permet de garantir que seules les
+                            transactions légitimes
+                            son vérifiées dans la blockchain d’une cryptomonnaie
+                            donnée. Il sert à contribuer à la stabilité et au bon fonctionnement du réseau d’une
+                            cryptomonnaie.</p>
+                        <p>Un mineur est quelqu’un qui met à disposition la puissance de son ordinateur au service du
+                            réseau blockchain de pair à
+                            pair. C’est la méthode de « proof-of-work ».</p>
+                        <p>Comme les mineurs de métaux précieux, les mineurs de Bitcoin ont besoin de deux choses : de
+                            mining hardware et
+                            d’énergie. Le mining hardware est le matériel informatique et l’énergie est tout simplement
+                            de l’électricité pour faire
+                            fonctionner le mining hardware.</p>
+                        <p>Le mining peut s’apparenter à une compétition pour la simple et bonne raison que le premier
+                            mineur qui valide un nouveau
+                            bloc à intégrer à la blockchain reçoit une récompense. Cette récompense est une fraction
+                            d’un crypto actif miné appelée
+                            « block reward », récompense de bloc en français. En clair, il reçoit une certaine quantité
+                            de Bitcoins nouvellement
+                            frappés pour avoir été le premier à valider avec succès et rapidité une transaction.</p>
+                        <p><strong>Comment le mining fonctionne-t-il ?</strong><br />Tout d’abord, il faut savoir que
+                            toutes les transactions qui ont été effectuées dans les dix
+                            dernières minutes sont
+                            continuellement regroupées en blocs par les ordinateurs des mineurs. Ces dix minutes sont le
+                            temps nécessaire à un bloc
+                            Bitcoin pour être généré. Les ordinateurs entrent donc en compétition pour résoudre un
+                            casse-tête cryptographique
+                            complexe pour être le premier à valider ce nouveau bloc.</p>
+                        <p>Lorsqu’un mineur trouve la bonne solution en premier, celle-ci est diffusée sur tout le
+                            réseau blockchain puis les
+                            autres nœuds vérifient qu’elle est correcte. Ensuite, le nouveau bloc est ajouté à la
+                            blockchain.</p>
+                        <p>Un système de récompense comme cela incite tous les utilisateurs à participer au mining et à
+                            contribuer à son bon
+                            fonctionnement. S’il n’existait pas, la technologie blockchain ne fonctionnerait pas.</p>
+                        <p>La résolution de ces casse-têtes est nécessaire pour sécuriser le réseau Bitcoin contre toute
+                            attaque car si quelqu’un
+                            voulait inverser des transactions dans la blockchain, il devrait posséder 51% de la
+                            puissance informatique du réseau
+                            mondial et ainsi, pouvoir valider le bloc correspondant. Générer une attaque comme celle-ci
+                            serait extrêmement couteux
+                            et nécessiterait une puissance informatique colossale.</p>
+                        <p>Le casse-tête consiste à trouver un nombre appelé nonce, pour nombre utilisé une fois, qui,
+                            lorsqu'il est combiné avec
+                            les données du bloc et exécuté à travers un algorithme spécifique, génère une chaîne
+                            aléatoire de chiffres et de lettres
+                            à 64 chiffres. Ce nombre aléatoire doit être inférieur ou égal à la cible à 64 chiffres
+                            définie par le système, connue
+                            sous le nom de target hash.</p>
+                        <p><strong>Quand est-ce que le dernier Bitcoin sera miné ?</strong><br />D’après des études, le
+                            dernier Bitcoin sera miné en 2040. A ce jour, en 2022, pas moins de
+                            18.93 millions de Bitcoins
+                            ont été minés.</p>
+                        <p><strong>Et niveau technicité, comment miner un Bitcoin ?</strong><br />
+                            Si vous êtes déterminés à comprendre comment miner un Bitcoin, continuez sur ce site.</p>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="contentCenter">
+                        <h2>Le wallet</h2>
+                        <p>Une fois les Bitcoins achetés, il est possible de les conserver dans un wallet : un
+                            portefeuille électronique physique
+                            ou numérique. Le wallet a plusieurs avantages dont un principal qui consiste à éviter les
+                            piratages dont peuvent être
+                            victimes les plateformes de cryptomonnaies. En effet, le wallet comprend deux clés. La
+                            première est une clé publique
+                            connue de tous et qui correspond à une adresse Bitcoin. La seconde est une clé privée connue
+                            seulement du détenteur du
+                            wallet. Les wallets physiques ressemblent à des clés USB et deux acteurs se disputent le
+                            marché : le Français Ledger et
+                            le Tchèque Trezor. Les wallets numériques sont en fait, des portefeuilles logiciels et
+                            peuvent être accessibles sur
+                            ordinateur et mobile. ArcBit, BitGo, ou encore Electrum en sont les exemples. lien</p>
+                    </div>
+                </div>
+            </section>
 
-                            <img class="ImagesFonc" src="./img/Systeme-bancaire-classique-3-1.png" width="518"
-                                 height="412"
-                                 alt="Image montrant le fonctionnement du système bancaire"/>
-                            <img class="ImagesFonc" src="./img/Systeme-bancaire-classique-3-2.png" width="439"
-                                 height="315"
-                                 alt="Image montrant le fonctionnement du système bancaire"/>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contentRight">
-                    <ul>
-                        <li>
-                            <p>Fonctionnement du <b>système de paiement Bitcoin :</b></p>
-                            <img class="ImagesFonc" src="./img/Systeme-bitcoin-2-1.png" width="508" height="423"
-                                 alt="Image montrant le fonctionnement du système de paiement du Bitcoin"/>
-                            <img class="ImagesFonc" src="./img/Systeme-bitcoin-2-2.png" width="434" height="369"
-                                 alt="Image montrant le fonctionnement du système de paiement du Bitcoin"/>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content2">
-                <div class="contentCenter">
-                    <ul>
-                        <li>
-                            <p>Le système de paiement est <b>totalement anonyme</b>, le réseau Bitcoin identifie les
-                                utilisateurs en leur attribuant des <b>pseudonymes</b>. Ce qui donne quelque chose comme
-                                ceci : Utilisateur #105 donne 0,008 bitcoins à Utilisateur #198. </p>
-                            <p><cite><a
-                                    href="https://www.jepargneenligne.com/crypto-monnaie/quest-ce-que-le-bitcoin/"
-                                    target="_blank">jepargneenligne</a></cite></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="content2">
-                <div class="contentCenter">
-                    <ul>
-                        <li>
-                            <h2>Son mode de Création et de Circulation</h2>
-                            <ul>
-                                <li>
-                                    <p>
-                                        Pour <b>créer</b> et <b>gérer</b> les <b>bitcoins</b>, Bitcoin s'appuie sur un
-                                        logiciel.
-                                        Dans ce logiciel, les bitcoins <b>sont créés</b> conformément à un <b>protocole
-                                        qui
-                                        rétribue les agents</b>
-                                        (appelés <a href="./circulation&creation.html#minage">mineurs</a>) qui ont
-                                        <b>traité des transactions</b>.
-                                        Ces agents mettent à contribution <b>leur puissance de calcul informatique</b>
-                                        afin
-                                        de
-                                        <b>vérifier</b>, de <b>sécuriser</b> et <b>d'inscrire</b> les transactions dans
-                                        un
-                                        <b>registre virtuel</b>,
-                                        appelé <a href="./circulation&creation.html#blockchain">la blockchain</a>, en
-                                        français chaîne de
-                                        blocs, nom qui vient du fait que l'entité de base de Bitcoin s'appelle un bloc,
-                                        et que les blocs sont ensuite <b>reliés</b> en une <b>chaîne</b>, la chaine de
-                                        blocs.
-                                        <br/>
-                                        <br/>
-                                        Pour chaque nouveau bloc accepté, l'activité de
-                                        <b>vérification-sécurisation-enregistrement</b>,
-                                        appelée <a href="./circulation&creation.html#minage">minage</a>,
-                                        est rémunérée par des bitcoins nouvellement créés et par les frais des
-                                        transactions traitées.
-                                        En tant que <b>monnaie ou commodité</b>,
-                                        les bitcoins peuvent être <b>échangés</b> contre <b>d'autres monnaies</b> ou <b>commodités</b>,
-                                        <b>biens ou services</b>.
-                                        Le <b>taux d'échange</b> de la cryptomonnaie est <b>fixé</b> sur des <b>places
-                                        de
-                                        marché</b>
-                                        spécialisées et <b>fluctue</b> selon la loi de <b>l'offre et de la demande</b>.
-                                    </p>
-                                    <p><cite><a href="https://en.wikipedia.org/wiki/Bitcoin"
-                                                target="_blank">Wikipedia</a></cite>
-                                    </p>
-                                    <p>
-                                        Les <a href="./circulation&creation.html#minage">mineurs</a> doivent vérifier la
-                                        <b>validité</b>
-                                        d'un
-                                        certain nombre de transactions bitcoin qui sont regroupées dans un bloc.
-                                        <br/>
-                                        Cela implique de <b>vérifier 20 à 30 variables différentes</b>, telles que <b>l'adresse</b>,
-                                        le
-                                        <b>nom</b>,
-                                        <b>l'horodatage</b>, afin
-                                        de s'assurer que les expéditeurs ont suffisamment de valeur dans leurs comptes
-                                        et
-                                        qu'ils ne
-                                        l'ont
-                                        pas déjà dépensé, etc.
-                                        <br/>
-                                        Les mineurs <b>s'affrontent</b> alors pour être <b>les premiers</b> à faire
-                                        accepter
-                                        leur
-                                        validation en
-                                        résolvant
-                                        une sorte de <b>casse-tête</b>.
-                                        <br/>
-                                        Le casse-tête consiste à trouver un nombre – appelé <b><i>nonce</i></b>, pour
-                                        <q>nombre
-                                            utilisé une
-                                            fois</q> – qui,
-                                        lorsqu'il est <b>combiné</b> avec les données du bloc et <b>exécuté</b> à
-                                        travers un
-                                        <b>algorithme spécifique</b>, génère
-                                        une chaîne <b>aléatoire</b> de <b>chiffres</b> et de <b>lettres</b> à <b>64
-                                        chiffres</b>.
-                                        <br/>
-                                        Ce nombre <b>aléatoire</b> doit être <b>inférieur</b> ou <b>égal</b> à la <b>cible
-                                        à 64 chiffres</b> définie
-                                        par
-                                        le
-                                        système,
-                                        connue sous le nom de <b><i>target hash</i></b>.
-                                        <br/>
-                                        <br/>
-                                        Une fois que le <b><i>nonce</i></b> est trouvé qui génère le hachage cible,
-                                        le nouveau bloc du <a href="./circulation&creation.html#minage">mineur</a>
-                                        gagnant est lié au bloc précédent afin que tous les blocs soient <b>enchaînés
-                                        ensemble</b>.
-                                        <br/>
-                                        Cela rend le réseau inviolable car la modification d'un bloc modifierait tous
-                                        les blocs suivants. Le <b>résultat</b> est <b>diffusé</b> sur le <b>reste du
-                                        réseau</b>
-                                        <a href="./circulation&creation.html#blockchain">blockchain</a> et tous les
-                                        <b>nœuds</b> mettent ensuite à jour leurs copies de <a
-                                            href="./circulation&creation.html#blockchain">la
-                                        blockchain</a>.
-                                        Ce processus de <b>validation</b>, ou <b>mécanisme de consensus</b>, est connu
-                                        sous le nom de
-                                        <b><i>proof of work</i></b>
-                                        (preuve de travail en français).
-                                        <br/>
-                                        Le <a href="./circulation&creation.html#minage">mineur</a> <b>gagnant reçoit des
-                                        bitcoins</b>
-                                        nouvellement
-                                        frappés ainsi que les <b>frais</b> de <b>transaction payés</b> par l'expéditeur.
-                                    </p>
-                                    <p><cite><a
-                                            href="https://news.climate.columbia.edu/2021/09/20/bitcoins-impacts-on-climate-and-the-environment/"
-                                            target="_blank">news.climate.columbia.edu</a></cite></p>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </div>
-</main>
-<footer>
-    <p><a href="mailto:baptiste&period;lacroix&commat;etu&period;unice&period;fr">Lacroix Baptiste</a></p>
-    <p><a href="mailto:lea&period;jiner&commat;etu&period;unice&period;fr">Jiner Léa</a></p>
-</footer>
+        </div>
+    </main>
+    <footer>
+        <p><a href="mailto:baptiste&period;lacroix&commat;etu&period;unice&period;fr">Lacroix Baptiste</a></p>
+        <p><a href="mailto:lea&period;jiner&commat;etu&period;unice&period;fr">Jiner Léa</a></p>
+    </footer>
 </body>
 
 </html>
