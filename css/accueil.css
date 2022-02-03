@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
 
+html {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     display: flex;
     background-color: rgb(94, 66, 166);
@@ -10,73 +15,128 @@ body {
     color: white;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
 /* main */
-
-ol, ul {
+ol {
+    padding: 0;
     list-style: none;
 }
 
-/* Menu  a gauche */
-
-div.left {
-    flex: 0.4;
-    max-width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: right;
-    text-align: right;
-    transition: opacity 1s ease;
-    background-color: rgb(49, 36, 80);
+ul {
+    list-style: none;
 }
 
-div.left > section > ol > li {
-    margin: 10%;
+@media screen and (min-width: 1280px) {
+
+    /* Menu */
+    .bandeau {
+        flex: 0.2;
+        flex-direction: column;
+        max-width: 100%;
+        height: 100vh;
+        background-color: rgb(49, 36, 80);
+    }
+
+    div.nav-left {
+        width: 300px;
+        text-align: right;
+        margin: 50% auto;
+        transition: opacity 1s ease;
+    }
+
+    div.nav-right {
+        flex: 0.8;
+        justify-content: center;
+        align-self: center;
+    }
+
+    div.nav-right > section {
+        animation-duration: 3s;
+        animation-name: animatedText;
+    }
+
+    div.nav-left > section > ol > li {
+        margin: 5%;
+    }
+
+    div.nav-left > section > ol > li > a {
+        transition: color 0.2s ease;
+        color: rgba(255, 255, 255, 0.35);
+        display: block;
+        font-size: 0.6em;
+        font-weight: bold;
+        letter-spacing: 0.25em;
+        padding: 1.35em 0;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    div.nav-left > section > ol > li > a:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    div.nav-left > section > ol > li > a::before,
+    div.nav-left > section > ol > li > a::after {
+        width: 100%;
+        border-radius: 0.2em;
+        bottom: 0;
+        content: '';
+        height: 0.2em;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        animation-duration: 3s;
+        animation-name: animatedBar;
+        transition: 1s;
+    }
+
+    div.nav-left > section > ol > li > a:hover::before,
+    div.nav-left > section > ol > li > a:hover::after {
+        background-color: #a94c94;
+    }
 }
 
-div.left > section > ol > li > a {
-    transition: color 0.2s ease;
-    color: rgba(255, 255, 255, 0.35);
-    display: block;
-    font-size: 0.6em;
-    font-weight: bold;
-    letter-spacing: 0.25em;
-    padding: 1.35em 0;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
+@media screen and (max-width: 1280px) {
+
+    body {
+        display: block;
+        font-size: 20px;
+    }
+
+    .bandeau {
+        display: block;
+        height: 5em;
+        background-color: rgb(49, 36, 80);
+    }
+
+    .bandeau > .nav-left > section > ol {
+        margin: 0 auto;
+    }
+
+    .bandeau > .nav-left > section > ol > li {
+        display: inline-block;
+        margin: auto;
+    }
+
+    .bandeau > .nav-left > section > ol > li:hover {
+        border-bottom: orange solid 2px;
+    }
+
+    .bandeau > div.nav-left > section > ol > li > a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 200;
+        font-size: 1.1em;
+    }
+
+    .bandeau > div.nav-left > section > ol > li:hover > a {
+        color: #FFA500;
+    }
 }
 
-div.left > section > ol > li > a:hover {
-    color: rgba(255, 255, 255, 1);
-}
-
-div.left > section > ol > li > a::before, div.left > section > ol > li > a::after {
-    border-radius: 0.2em;
-    bottom: 0;
-    content: '';
-    height: 0.2em;
-    position: absolute;
-    right: 0;
-    width: 100%;
-    background-color: white;
-}
-
-div.left > section > ol > li:hover > a::before, div.left > section > ol > li:hover > a::after {
-    color: #a94c94;
-}
-
-/* Image a droite */
-
-div.right {
-    flex: 0.8;
-    float: right;
-    max-width: 100%;
-    height: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
 
 /* hyperliens */
 
@@ -89,4 +149,24 @@ a:hover {
 cite > a {
     color: black;
     text-decoration: none;
+}
+
+@keyframes animatedBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes animatedText {
+    from {
+        opacity: 0;
+        margin-top: 10%;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
