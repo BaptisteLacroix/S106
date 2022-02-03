@@ -2,96 +2,80 @@
 
 body {
     display: flex;
-    background-color: #1a1a1a;
+    background-color: rgb(94, 66, 166);
     padding: 0;
     margin: auto;
-    width: 70%;
+    width: 100%;
     height: 100vh;
+    color: white;
+    font-size: 30px;
     font-family: 'Poppins', sans-serif;
 }
 
 /* main */
 
+ol, ul {
+    list-style: none;
+}
+
 /* Menu  a gauche */
 
 div.left {
-    flex: 0.3;
-    float: left;
-    max-width: 60%;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center;
-    background-color: #202124;
+    flex: 0.4;
+    max-width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    transition: opacity 1s ease;
+    background-color: rgb(49, 36, 80);
+}
+
+div.left > section > ol > li {
+    margin: 10%;
+}
+
+div.left > section > ol > li > a {
+    transition: color 0.2s ease;
+    color: rgba(255, 255, 255, 0.35);
+    display: block;
+    font-size: 0.6em;
+    font-weight: bold;
+    letter-spacing: 0.25em;
+    padding: 1.35em 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div.left > section > ol > li > a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+div.left > section > ol > li > a::before, div.left > section > ol > li > a::after {
+    border-radius: 0.2em;
+    bottom: 0;
+    content: '';
+    height: 0.2em;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: white;
+}
+
+div.left > section > ol > li:hover > a::before, div.left > section > ol > li:hover > a::after {
+    color: #a94c94;
 }
 
 /* Image a droite */
 
 div.right {
-    flex: 0.7;
+    flex: 0.8;
     float: right;
     max-width: 100%;
+    height: 100%;
     margin-top: auto;
     margin-bottom: auto;
-    background-color: #121214;
-}
-
-/* Titres */
-
-.left > ol > li > a {
-    color: #f7931a;
-    margin: 5% auto;
-    font-size: 50px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Style des listes */
-
-ul {
-    padding: 0;
-    margin: 0;
-    display: block;
-    list-style: none;
-}
-
-ol {
-    padding: 0;
-    margin: 0;
-    display: block;
-    list-style: none;
-}
-
-.left > section > ol > li {
-    margin: 10%;
-    list-style: none;
-    background: #f7931a;;
-    display: block;
-    border-radius: 50px;
-    padding: 10px 20px;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-    transition: 1s;
-}
-
-.left > section > ol > li > a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-
-div.right > section > img#LogoBitcoin {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    transition: 1s;
-}
-
-.boite div.right > section > img#LogoBitcoin:hover {
-    transform: scale(1.5);
 }
 
 /* hyperliens */
