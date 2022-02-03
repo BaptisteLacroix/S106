@@ -99,17 +99,21 @@ ul {
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
 
     body {
         display: block;
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .bandeau {
-        display: block;
-        height: 5em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
         background-color: rgb(49, 36, 80);
+        height: 5em;
     }
 
     .bandeau > .nav-left > section > ol {
@@ -118,7 +122,7 @@ ul {
 
     .bandeau > .nav-left > section > ol > li {
         display: inline-block;
-        margin: auto;
+        margin: 10px;
     }
 
     .bandeau > .nav-left > section > ol > li:hover {
@@ -135,6 +139,10 @@ ul {
     .bandeau > div.nav-left > section > ol > li:hover > a {
         color: #FFA500;
     }
+}
+
+@media screen and (max-width: 620px) {
+
 }
 
 
