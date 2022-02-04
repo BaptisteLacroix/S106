@@ -15,14 +15,14 @@ body {
     color: white;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
     background-attachment: fixed;
     background-image: url("../img/intro.svg");
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    overflow-x: hidden;
 }
-
+/*
 #boutonPlus {
     color: white;
     text-decoration: none;
@@ -36,6 +36,7 @@ body {
 #boutonPlus:hover {
     border-color: rgba(255, 255, 255, 1)
 }
+*/
 
 h2 {
     color: orange;
@@ -67,17 +68,6 @@ ul {
         text-align: right;
         margin: 50% auto;
         transition: opacity 1s ease;
-    }
-
-    div.nav-right {
-        flex: 0.8;
-        justify-content: center;
-        align-self: center;
-    }
-
-    div.nav-right > section {
-        animation-duration: 3s;
-        animation-name: animatedText;
     }
 
     div.nav-left > section > ol > li {
@@ -125,16 +115,69 @@ ul {
     div.nav-left > section > ol > li > a:hover {
         color: #FFA500;
     }
+
+    div.nav-right {
+        flex: 0.8;
+        justify-content: center;
+        align-self: center;
+    }
+
+    div.nav-right > section {
+        animation-duration: 3s;
+        animation-name: animatedText;
+    }
+
+    #boutonPlus {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        padding: 0.5em 0.5em 0.5em 3em;
+        border-radius: 60px;
+    }
+
+    #boutonPlus::before {
+        z-index: 1;
+        display: block;
+        position: absolute;
+        top: 0.8em;
+        left: 1em;
+        content: "";
+        margin-left: auto;
+        margin-right: auto;
+        width: 0.7em;
+        height: 0.7em;
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+        color: white;
+        transform: rotate(-135deg);
+        transition: 1s;
+    }
+
+    #boutonPlus span {
+        z-index: -1;
+        position: absolute;
+        width: 1.5em;
+        height: 1.5em;
+        left: 0.8em;
+        border-radius: 50px;
+        background-color: #3e3e3edb;
+        transition: 1s;
+    }
+
+    #boutonPlus:hover span {
+        width: 90%;
+    }
+
+    #boutonPlus:hover::before {
+        /*margin-left: 0.6em;*/
+        transform: translateX(0.6em);
+    }
 }
 
 @media screen and (max-width: 999px) {
     body {
         display: flex;
         flex-direction: column;
-    }
-
-    div.bandeau > div.nav-left {
-        border-top: solid 5px orange;
     }
 
     div.nav-left > section > ol > li > a {
@@ -151,8 +194,37 @@ ul {
         text-align: center;
     }
 
+    div.nav-left > section > ol > li:first-of-type > a {
+        transition: color 0.2s ease;
+        color: orange;
+        display: block;
+        font-size: 0.6em;
+        font-weight: bold;
+        letter-spacing: 0.25em;
+        padding: 1.35em 0;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
     div.nav-left > section > ol > li > a:hover {
         color: rgba(255, 255, 255, 1);
+    }
+
+    div.nav-left > section > ol > li:first-of-type > a::before,
+    div.nav-left > section > ol > li:first-of-type > a::after {
+        width: 100%;
+        border-radius: 0.2em;
+        bottom: 0;
+        content: '';
+        height: 0.2em;
+        position: absolute;
+        right: 0;
+        background-color: orange;
+        animation-duration: 3s;
+        animation-name: animatedBar;
+        transition: 1s;
     }
 
     div.nav-left > section > ol > li > a::before,
@@ -190,23 +262,10 @@ ul {
         font-weight: bolder;
     }
 
-    div.nav-right > section > ul li:last-of-type {
+    div.nav-right > section > ul li {
         text-align: center;
         margin-top: 5%;
     }
-}
-
-@media screen and (max-width: 840px) {
-    body {
-        display: block;
-        font-size: 10px;
-        background-color: #121214;
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-
 }
 
 
