@@ -23,6 +23,20 @@ body {
     background-size: 100% 100%;
 }
 
+#boutonPlus {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.55);
+    transition: 1s;
+}
+
+#boutonPlus:hover {
+    border-color: rgba(255, 255, 255, 1)
+}
+
 h2 {
     color: orange;
 }
@@ -40,7 +54,7 @@ ul {
 @media screen and (min-width: 1000px) {
 
     /* Menu */
-    .bandeau {
+    div.bandeau {
         flex: 0.2;
         flex-direction: column;
         max-width: 100%;
@@ -72,7 +86,7 @@ ul {
 
     div.nav-left > section > ol > li > a {
         transition: color 0.2s ease;
-        color: rgba(255, 255, 255, 0.35);
+        color: rgba(255, 255, 255, 0.7);
         display: block;
         font-size: 0.6em;
         font-weight: bold;
@@ -108,69 +122,90 @@ ul {
     }
 
     div.nav-left > section > ol > li > a:hover,
-    div.nav-left > section > ol > li > a:hover{
+    div.nav-left > section > ol > li > a:hover {
         color: #FFA500;
-    }
-
-    #boutonPlus {
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 50px;
-        border-style: solid;
-        border-color: rgba(255, 255, 255, 0.55);
-        transition: 1s;
-    }
-
-    #boutonPlus:hover {
-        border-color: rgba(255, 255, 255, 1)
     }
 }
 
 @media screen and (max-width: 999px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 
+    div.bandeau > div.nav-left {
+        border-top: solid 5px orange;
+    }
+
+    div.nav-left > section > ol > li > a {
+        transition: color 0.2s ease;
+        color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 0.6em;
+        font-weight: bold;
+        letter-spacing: 0.25em;
+        padding: 1.35em 0;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    div.nav-left > section > ol > li > a:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    div.nav-left > section > ol > li > a::before,
+    div.nav-left > section > ol > li > a::after {
+        width: 100%;
+        border-radius: 0.2em;
+        bottom: 0;
+        content: '';
+        height: 0.2em;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        animation-duration: 3s;
+        animation-name: animatedBar;
+        transition: 1s;
+    }
+
+    div.nav-left > section > ol > li > a:hover::before,
+    div.nav-left > section > ol > li > a:hover::after {
+        background-color: orange;
+    }
+
+    div.nav-left > section > ol > li > a:hover,
+    div.nav-left > section > ol > li > a:hover {
+        color: #FFA500;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    div.nav-right > section > ul > li > h2 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bolder;
+    }
+
+    div.nav-right > section > ul li:last-of-type {
+        text-align: center;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 840px) {
     body {
         display: block;
         font-size: 10px;
         background-color: #121214;
     }
-
-    .bandeau {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        background-color: #0a0903;
-        height: 5em;
-    }
-
-    .bandeau > .nav-left > section > ol {
-        margin: 0 auto;
-    }
-
-    .bandeau > .nav-left > section > ol > li {
-        display: inline-block;
-        margin: 10px;
-    }
-
-    .bandeau > .nav-left > section > ol > li:hover {
-        border-bottom: orange solid 2px;
-    }
-
-    .bandeau > div.nav-left > section > ol > li > a {
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: 200;
-        font-size: 1.1em;
-    }
-
-    .bandeau > div.nav-left > section > ol > li:hover > a {
-        color: #FFA500;
-    }
 }
 
-@media screen and (max-width: 620px) {
+
+@media screen and (max-width: 600px) {
 
 }
 
