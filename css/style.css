@@ -510,3 +510,7 @@ li.liste2 {
 ol.date_ol {
     padding-left: 3%;
 }
+
+.highlight-orange {
+    color: #FFA500;
+}
