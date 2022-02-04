@@ -301,3 +301,10 @@ cite > a {
         opacity: 1;
     }
 }
+
+li#citation_accueil {
+    font-size: 1.5em;
+    width: 85%;
+    font-style: italic;
+    margin-bottom: 4%;
+}
