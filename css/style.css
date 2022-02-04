@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:wght@300&display=swap');
-
 body {
     background-color: #121214;
     padding: 0;
@@ -30,7 +29,7 @@ nav {
     padding: 1%;
     background-color: #2c2c2c;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-    border-top: orange solid 20px;
+    border-bottom: orange solid 5px;
 }
 
 nav > div.nav-left {
@@ -77,66 +76,55 @@ nav ol > li {
 }
 
 @media screen and (min-width: 1171px) {
-    nav ol > li:hover {
-        border-bottom: orange solid 2px;
+    nav ol > li:hover { 
+        border-radius: 5px;
+        background-color: #3e3e3edb;
     }
-
     nav > div.nav-right > ol > li:hover > a {
         color: #FFA500;
     }
 }
 
 @media screen and (max-width: 1171px) {
-
     #home {
         display: none;
     }
-
     nav {
         display: block;
         text-align: center;
         padding: 30px;
     }
-
     nav > div.nav-left {
         display: block;
         margin-left: 0;
     }
-
     nav > div.nav-right {
         display: block;
         margin-right: 0;
     }
-
     #drop ~ div.nav-left > ol {
         display: none;
     }
-
     #drop:not(:checked) ~ div.nav-right > ol {
         display: none;
     }
-
     #drop:checked ~ div.nav-right > ol {
         height: auto;
         margin-top: 10px;
         display: block;
     }
-
     nav ol > li {
         list-style: none;
         display: block;
         padding: 15px 20px;
         cursor: pointer;
     }
-
     nav ol > li:hover > a {
         border-bottom: orange solid 2px;
     }
-
     nav > div.nav-right > ol > li:hover > a {
         color: #FFA500;
     }
-
     label#boutonMenu {
         display: block;
         /*padding: 15px 20px;*/
@@ -145,21 +133,19 @@ nav ol > li {
         color: #ffffff;
         font-size: 1.2em;
         font-weight: bold;
-        transition: all 1s ease-in-out; /* on garde ? */
+        transition: 1s;
     }
-
     #drop:not(:checked) + label#boutonMenu {
-        color: #FFF;
+        color: #FFA500;
         animation: bounce 2s infinite;
         /*border-bottom: orange solid 2px;*/
     }
-
     #drop:checked + label#boutonMenu {
         color: #FFA500;
+        transform: rotate(135deg);
         animation: bounce2 2s infinite;
     }
-
-    label.arrowMenu {
+    .arrowMenu {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -168,9 +154,12 @@ nav ol > li {
         border-bottom: 6px solid;
         border-left: 6px solid;
     }
-
     @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
             transform: translateY(0) rotate(-45deg);
         }
         40% {
@@ -180,9 +169,12 @@ nav ol > li {
             transform: translateY(-10px) rotate(-45deg);
         }
     }
-
     @keyframes bounce2 {
-        0%, 20%, 50%, 80%, 100% {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
             transform: translateY(0) rotate(135deg);
         }
         40% {
@@ -198,8 +190,8 @@ nav ol > li {
     .content2 {
         display: block;
     }
-
-    .contentRight, .contentLeft {
+    .contentRight,
+    .contentLeft {
         flex: 1;
         max-width: 100%;
         padding: 1% 3%;
@@ -210,6 +202,7 @@ nav ol > li {
         transition: 1s;
     }
 }
+
 
 /* Style des listes */
 
@@ -227,6 +220,7 @@ ol {
     list-style: none;
 }
 
+
 /* main */
 
 main {
@@ -240,16 +234,22 @@ main {
     .content2 {
         display: flex;
     }
-
-    .contentLeft, .contentRight {
+    .contentLeft,
+    .contentRight {
         flex: 0.5;
         max-width: 50%;
-        padding: 1% 3%;
-        margin: 0 3% 3%;
-        background-color: #202124;
-        border-radius: 30px;
+        padding: 1.5% 2%;
+        margin: 0 2% 3%;
+        background-color: #2b2c30;
+        border-radius: 12px;
         transition: 1s;
-        box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+        box-shadow: 0px 0px 15px 2px #0d0d0e;
+    }
+    .contentLeft {
+        margin-right: 2%;
+    }
+    .contentRight {
+        margin-left: 2%;
     }
 }
 
@@ -263,6 +263,7 @@ main {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
     transition: 1s;
 }
+
 
 /* Images */
 
@@ -289,6 +290,7 @@ main {
     width: 100%;
     height: auto;
 }
+
 
 /* Titres */
 
@@ -415,19 +417,24 @@ footer > p > a:hover {
 }
 
 div.content2 p {
+    margin: 2%;
     background-color: #2b2c30;
     padding: 2%;
-    border-radius: 0 0 12px 12px;
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border: 1px solid #4a4a4a;
     border-top: 1px solid orange;
-    margin: 2% 2% 4%;
+    margin-bottom: 4%;
     line-height: 1.9;
 }
 
 div.div {
+    margin: 2%;
     border-radius: 12px;
-    margin: 2% 2% 4%;
-    box-shadow: 0 0 15px 2px #0d0d0e;
-    background-color: #1c1d20;
+    margin-bottom: 4%;
+    box-shadow: 0px 0px 15px 2px #0d0d0e;
+    background-color: #2b2c30;
     padding: 2%;
 }
 
@@ -445,9 +452,21 @@ li.date {
 }
 
 li.liste1 {
-    padding: 1.5% 1.5% 0;
+    padding: 1.5%;
+    padding-bottom: 0;
     list-style-type: disc;
     margin-left: 5%;
+}
+
+li.liste2 {
+    padding: 1.5%;
+    padding-bottom: 0;
+    list-style-type: disc;
+    margin-left: 5%;
+}
+
+#unique {
+    margin-bottom: 2%;
 }
 
 ol.date_ol {
