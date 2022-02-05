@@ -489,6 +489,67 @@ ol.date_ol {
     color: var(--orangeColor);
 }
 
+.containerBoutons {
+    display: flex;
+}
+
+#boutonDroit {
+    text-align: center;
+    flex: 0.5;
+}
+
+#boutonGauche {
+    text-align: center;
+    flex: 0.5;
+}
+
+
+.boutonPlus {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 0.5em 0.5em 3em;
+    border-radius: 60px;
+}
+
+.boutonPlus::before {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: 0.8em;
+    left: 1em;
+    content: "";
+    margin-left: auto;
+    margin-right: auto;
+    width: 0.7em;
+    height: 0.7em;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    color: white;
+    transform: rotate(-135deg);
+    transition: 1s;
+}
+
+.boutonPlus span {
+    z-index: -1;
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    left: 0.8em;
+    border-radius: 50px;
+    background-color: #3e3e3edb;
+    transition: 1s;
+}
+
+.boutonPlus:hover span {
+    width: 90%;
+}
+
+.boutonPlus:hover::before {
+    transform: translateX(0.6em);
+}
+
+
 @keyframes bounce {
     0%,
     20%,
