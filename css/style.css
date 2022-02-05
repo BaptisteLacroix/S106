@@ -8,6 +8,10 @@
     --orangeColor: #FFA500;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--blackColor);
     padding: 0;
@@ -489,6 +493,8 @@ ol.date_ol {
     color: var(--orangeColor);
 }
 
+/* Boutons précédent / Suivant */
+
 .containerBoutons {
     display: flex;
 }
@@ -510,6 +516,12 @@ ol.date_ol {
     color: white;
     padding: 0.5em 0.5em 0.5em 3em;
     border-radius: 60px;
+}
+
+#boutonGauche > .boutonPlus::before {
+    transform: rotate(50deg);
+    top: 0.8em;
+    left: 1.35em;
 }
 
 .boutonPlus::before {
@@ -545,10 +557,57 @@ ol.date_ol {
     width: 90%;
 }
 
-.boutonPlus:hover::before {
-    transform: translateX(0.6em);
+/* Flèche back to Top */
+
+.boutonBack {
+    position: fixed;
+    float: right;
+    bottom: 75px;
+    right: -20%;
+    width: 300px;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 0.5em 0.5em 3em;
+    border-radius: 60px;
 }
 
+.boutonBack::before {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: -5em;
+    left: -2em;
+    content: "";
+    margin-left: auto;
+    margin-right: auto;
+    width: 0.9em;
+    height: 0.9em;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    color: white;
+    transform: rotate(135deg);
+    transition: 1s;
+}
+
+.boutonBack span {
+    z-index: -1;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: -5.7em;
+    left: -2.5em;
+    border-radius: 50px;
+    background-color: #3e3e3edb;
+    transition: 1s;
+}
+
+.boutonBack:hover::before,
+.boutonBack:hover span {
+    animation: bounce3 2s infinite;
+}
+
+
+/* keyframes des flèches */
 
 @keyframes bounce {
     0%,
@@ -567,6 +626,22 @@ ol.date_ol {
 }
 
 @keyframes bounce2 {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0) rotate(135deg);
+    }
+    40% {
+        transform: translateY(-15px) rotate(135deg);
+    }
+    60% {
+        transform: translateY(-10px) rotate(135deg);
+    }
+}
+
+@keyframes bounce3 {
     0%,
     20%,
     50%,
