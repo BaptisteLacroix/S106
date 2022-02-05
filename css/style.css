@@ -509,13 +509,13 @@ ol.date_ol {
     flex: 0.5;
 }
 
-
 .boutonPlus {
     position: relative;
     text-decoration: none;
     color: white;
     padding: 0.5em 0.5em 0.5em 3em;
     border-radius: 60px;
+    font-size: 20px;
 }
 
 #boutonGauche > .boutonPlus::before {
@@ -556,6 +556,15 @@ ol.date_ol {
 .boutonPlus:hover span {
     width: 90%;
 }
+
+#boutonDroit > .boutonPlus:hover::before {
+    animation: bounce4 2s infinite;
+}
+
+#boutonGauche > .boutonPlus:hover::before {
+    transform: rotate(-130deg);
+}
+
 
 /* Flèche back to Top */
 
@@ -654,5 +663,21 @@ ol.date_ol {
     }
     60% {
         transform: translateY(-10px) rotate(135deg);
+    }
+}
+
+@keyframes bounce4 {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(0) rotate(-135deg);
+    }
+    40% {
+        transform: translateX(13px) rotate(-135deg);
+    }
+    60% {
+        transform: translateX(7px) rotate(-135deg);
     }
 }
