@@ -27,7 +27,9 @@ body {
 
 /* Titres */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--orangeColor);
     font-weight: 300;
 }
@@ -65,20 +67,20 @@ nav {
     border-bottom: orange solid 5px;
 }
 
-nav > div.nav-left {
+nav>div.nav-left {
     display: flex;
     flex-grow: 1;
     margin-left: 5%;
 }
 
-nav > div.nav-right {
+nav>div.nav-right {
     display: flex;
     flex-direction: column;
     height: 100%;
     margin-right: 5%;
 }
 
-nav > div.nav-left > ol > li > a {
+nav>div.nav-left>ol>li>a {
     color: #ffffff;
     font-size: 1.2em;
     text-decoration: none;
@@ -87,18 +89,18 @@ nav > div.nav-left > ol > li > a {
     padding: 0;
 }
 
-nav > div.nav-left > ol > li:hover > a {
+nav>div.nav-left>ol>li:hover>a {
     color: var(--orangeColor);
 }
 
-nav > div.nav-right > ol > li > a {
+nav>div.nav-right>ol>li>a {
     color: white;
     text-decoration: none;
     font-weight: 200;
     font-size: 1.1em;
 }
 
-nav ol > li {
+nav ol>li {
     list-style: none;
     display: inline-block;
     padding: 10px 20px;
@@ -147,7 +149,7 @@ main {
 
 /* Images */
 
-.contentLeft ul > li > .ImagesFonc {
+.contentLeft ul>li>.ImagesFonc {
     max-width: 100%;
     max-height: 100%;
     margin: 10px;
@@ -155,7 +157,7 @@ main {
     height: auto;
 }
 
-.contentRight ul > li > .ImagesFonc {
+.contentRight ul>li>.ImagesFonc {
     max-width: 100%;
     max-height: 100%;
     margin: 10px;
@@ -163,7 +165,7 @@ main {
     height: auto;
 }
 
-.contentCenter ul > li > .ImagesFonc {
+.contentCenter ul>li>.ImagesFonc {
     max-width: 100%;
     max-height: 100%;
     margin: 10px;
@@ -185,6 +187,11 @@ div.arrowMenu {
     transform: translateY(0) rotate(-45deg);
 }
 
+.contentCenter ul>li#image_cours_bitcoin {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
 
 /* balise bold */
 
@@ -194,7 +201,7 @@ b {
     font-size: large;
 }
 
-b > i {
+b>i {
     color: var(--orangeColor);
 }
 
@@ -222,7 +229,7 @@ b > i {
     width: 100%;
 }
 
-#iframeBitcoin2 > iframe {
+#iframeBitcoin2>iframe {
     border: 0;
     margin: 0;
     padding: 0;
@@ -247,7 +254,7 @@ b > i {
     width: 100%;
 }
 
-#iframeBitcoin3 > iframe {
+#iframeBitcoin3>iframe {
     border: 0;
     margin: 0;
     padding: 0;
@@ -266,7 +273,7 @@ a:hover {
 
 /* Citation */
 
-cite > a {
+cite>a {
     color: white;
     text-decoration: none;
 }
@@ -283,11 +290,11 @@ footer {
     text-align: center;
 }
 
-footer > p > a {
+footer>p>a {
     text-decoration: none;
 }
 
-footer > p > a:hover {
+footer>p>a:hover {
     color: var(--orangeColor);
 }
 
@@ -371,7 +378,7 @@ ol.date_ol {
     font-size: 20px;
 }
 
-#boutonGauche > .boutonPlus::before {
+#boutonGauche>.boutonPlus::before {
     transform: rotate(50deg);
     top: 0.8em;
     left: 1.35em;
@@ -410,11 +417,11 @@ ol.date_ol {
     width: 90%;
 }
 
-#boutonDroit > .boutonPlus:hover::before {
+#boutonDroit>.boutonPlus:hover::before {
     animation: bounce4 2s infinite;
 }
 
-#boutonGauche > .boutonPlus:hover::before {
+#boutonGauche>.boutonPlus:hover::before {
     transform: rotate(-130deg);
 }
 
@@ -472,12 +479,12 @@ ol.date_ol {
 
 @media screen and (min-width: 1171px) {
 
-    nav ol > li:hover {
+    nav ol>li:hover {
         border-radius: 5px;
         background-color: var(--lightgreyColor);
     }
 
-    nav > div.nav-right > ol > li:hover > a {
+    nav>div.nav-right>ol>li:hover>a {
         color: var(--orangeColor);
     }
 }
@@ -497,38 +504,38 @@ ol.date_ol {
         padding: 30px;
     }
 
-    nav > div.nav-left {
+    nav>div.nav-left {
         display: block;
         margin-left: 0;
     }
 
-    nav > div.nav-right {
+    nav>div.nav-right {
         display: block;
         margin-right: 0;
     }
 
-    #drop ~ div.nav-left > ol {
+    #drop~div.nav-left>ol {
         display: none;
     }
 
-    #drop:not(:checked) ~ div.nav-right > ol {
+    #drop:not(:checked)~div.nav-right>ol {
         display: none;
     }
 
-    #drop:checked ~ div.nav-right > ol {
+    #drop:checked~div.nav-right>ol {
         height: auto;
         margin-top: 10px;
         display: block;
     }
 
-    nav ol > li {
+    nav ol>li {
         list-style: none;
         display: block;
         padding: 15px 20px;
         cursor: pointer;
     }
 
-    nav > div.nav-right > ol > li:hover > a {
+    nav>div.nav-right>ol>li:hover>a {
         color: var(--orangeColor);
         border-radius: 5px;
         background-color: var(--lightgreyColor);
@@ -545,12 +552,12 @@ ol.date_ol {
         transition: 1s;
     }
 
-    #drop:not(:checked) + label#boutonMenu {
+    #drop:not(:checked)+label#boutonMenu {
         color: var(--orangeColor);
         animation: bounce 2s infinite;
     }
 
-    #drop:checked + label#boutonMenu {
+    #drop:checked+label#boutonMenu {
         color: var(--orangeColor);
         transform: rotate(135deg);
         animation: bounce2 2s infinite;
@@ -625,6 +632,7 @@ ol.date_ol {
 /* keyframes des flèches */
 
 @keyframes bounce {
+
     0%,
     20%,
     50%,
@@ -632,15 +640,18 @@ ol.date_ol {
     100% {
         transform: translateY(0) rotate(-45deg);
     }
+
     40% {
         transform: translateY(-15px) rotate(-45deg);
     }
+
     60% {
         transform: translateY(-10px) rotate(-45deg);
     }
 }
 
 @keyframes bounce2 {
+
     0%,
     20%,
     50%,
@@ -648,15 +659,18 @@ ol.date_ol {
     100% {
         transform: translateY(0) rotate(135deg);
     }
+
     40% {
         transform: translateY(-15px) rotate(135deg);
     }
+
     60% {
         transform: translateY(-10px) rotate(135deg);
     }
 }
 
 @keyframes bounce3 {
+
     0%,
     20%,
     50%,
@@ -664,15 +678,18 @@ ol.date_ol {
     100% {
         transform: translateY(0) rotate(135deg);
     }
+
     40% {
         transform: translateY(-15px) rotate(135deg);
     }
+
     60% {
         transform: translateY(-10px) rotate(135deg);
     }
 }
 
 @keyframes bounce4 {
+
     0%,
     20%,
     50%,
@@ -680,9 +697,11 @@ ol.date_ol {
     100% {
         transform: translateX(0) rotate(-135deg);
     }
+
     40% {
         transform: translateX(13px) rotate(-135deg);
     }
+
     60% {
         transform: translateX(7px) rotate(-135deg);
     }
