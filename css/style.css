@@ -1,11 +1,16 @@
+/*-------------------- Importation de polices --------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:wght@300&display=swap');
 
 
 :root {
     --greyColor: #2c2c2c;
+    --greyLighter: #2b2c30;
     --lightgreyColor: #3e3e3edb;
     --blackColor: #121214;
     --orangeColor: #FFA500;
+    --deepBlack: #000000;
+    --brightWhite: #ffffff;
 }
 
 html {
@@ -22,10 +27,10 @@ body {
 
 * {
     box-sizing: border-box;
-    color: white;
+    color: var(--brightWhite);
 }
 
-/* Titres */
+/*-------------------- Titres --------------------*/
 
 h1,
 h2,
@@ -44,7 +49,7 @@ h1 {
 }
 
 
-/* Nav */
+/*-------------------- Navigation --------------------*/
 
 #boutonMenu {
     display: none;
@@ -94,7 +99,7 @@ nav>div.nav-left>ol>li:hover>a {
 }
 
 nav>div.nav-right>ol>li>a {
-    color: white;
+    color: var(--brightWhite);
     text-decoration: none;
     font-weight: 200;
     font-size: 1.1em;
@@ -105,11 +110,11 @@ nav ol>li {
     display: inline-block;
     padding: 10px 20px;
     cursor: pointer;
-    border-bottom: rgba(0, 0, 0, 0) solid 2px;
-    border-top: rgba(0, 0, 0, 0) solid 2px;
+    border-bottom: var(--greyColor) solid 2px;
+    border-top: var(--greyColor) solid 2px;
 }
 
-/* Style des listes */
+/*-------------------- Style des listes --------------------*/
 
 ul {
     padding: 0;
@@ -125,8 +130,29 @@ ol {
     list-style: none;
 }
 
+ol.date_ol {
+    padding-left: 3%;
+}
 
-/* main */
+li.date {
+    padding: 1% 3%;
+    list-style-type: disc;
+    margin: 2%;
+}
+
+li.liste1 {
+    padding: 1.5% 1.5% 0;
+    list-style-type: disc;
+    margin-left: 5%;
+}
+
+li.liste2 {
+    padding: 1.5% 1.5% 0;
+    list-style-type: disc;
+    margin-left: 5%;
+}
+
+/* -------------------- Main --------------------*/
 
 main {
     max-width: 100%;
@@ -142,12 +168,37 @@ main {
     margin: 0 3% 3%;
     background-color: #202124;
     border-radius: 30px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+    box-shadow: 0 -2px 10px var(--deepBlack);
     transition: 1s;
 }
 
+div.content2 p {
+    background-color: var(--greyLighter);
+    padding: 2%;
+    border-radius: 0 0 12px 12px;
+    border: 1px solid #4a4a4a;
+    border-top: 1px solid orange;
+    margin: 2% 2% 4%;
+    line-height: 1.9;
+}
 
-/* Images */
+div.texte {
+    border-radius: 12px;
+    margin: 2% 2% 4%;
+    box-shadow: 0 0 15px 2px #0d0d0e;
+    background-color: var(--greyLighter);
+    padding: 2%;
+}
+
+#unique {
+    margin-bottom: 2%;
+}
+
+.highlight-orange {
+    color: var(--orangeColor);
+}
+
+/*-------------------- Images --------------------*/
 
 .contentLeft ul>li>.ImagesFonc {
     max-width: 100%;
@@ -173,7 +224,6 @@ main {
     height: auto;
 }
 
-
 div.arrowMenu {
     display: block;
     color: var(--orangeColor);
@@ -193,7 +243,7 @@ div.arrowMenu {
     margin: 0 auto;
 }
 
-/* balise bold */
+/* -------------------- Balise en gras --------------------*/
 
 b {
     color: var(--orangeColor);
@@ -204,6 +254,15 @@ b {
 b>i {
     color: var(--orangeColor);
 }
+
+strong {
+    display: inline-block;
+    margin-bottom: 1%;
+    font-weight: 500;
+    font-size: large;
+}
+
+/*-------------------- Style des iframes --------------------*/
 
 #iframeBitcoin1 {
     height: 669px;
@@ -263,97 +322,22 @@ b>i {
     height: 100%;
 }
 
-
-/* hyperliens */
+/*-------------------- Hyperliens --------------------*/
 
 a:hover {
     color: var(--orangeColor);
 }
 
 
-/* Citation */
+/*-------------------- Citation --------------------*/
 
 cite>a {
-    color: white;
+    color: var(--brightWhite);
     text-decoration: none;
 }
 
 
-/* footer */
-
-footer {
-    display: block;
-    margin-top: 3%;
-    padding: 1%;
-    background-color: #2c2c2c;
-    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-    text-align: center;
-}
-
-footer>p>a {
-    text-decoration: none;
-}
-
-footer>p>a:hover {
-    color: var(--orangeColor);
-}
-
-div.content2 p {
-    background-color: #2b2c30;
-    padding: 2%;
-    border-radius: 0 0 12px 12px;
-    border: 1px solid #4a4a4a;
-    border-top: 1px solid orange;
-    margin: 2% 2% 4%;
-    line-height: 1.9;
-}
-
-div.texte {
-    border-radius: 12px;
-    margin: 2% 2% 4%;
-    box-shadow: 0 0 15px 2px #0d0d0e;
-    background-color: #2b2c30;
-    padding: 2%;
-}
-
-strong {
-    display: inline-block;
-    margin-bottom: 1%;
-    font-weight: 500;
-    font-size: large;
-}
-
-li.date {
-    padding: 1% 3%;
-    list-style-type: disc;
-    margin: 2%;
-}
-
-li.liste1 {
-    padding: 1.5% 1.5% 0;
-    list-style-type: disc;
-    margin-left: 5%;
-}
-
-li.liste2 {
-    padding: 1.5% 1.5% 0;
-    list-style-type: disc;
-    margin-left: 5%;
-}
-
-#unique {
-    margin-bottom: 2%;
-}
-
-ol.date_ol {
-    padding-left: 3%;
-}
-
-.highlight-orange {
-    color: var(--orangeColor);
-}
-
-/* Boutons précédent / Suivant */
+/*-------------------- Boutons flèche précédent et suivant --------------------*/
 
 .containerBoutons {
     display: flex;
@@ -372,7 +356,7 @@ ol.date_ol {
 .boutonPlus {
     position: relative;
     text-decoration: none;
-    color: white;
+    color: var(--brightWhite);
     padding: 0.5em 0.5em 0.5em 3em;
     border-radius: 60px;
     font-size: 20px;
@@ -397,7 +381,7 @@ ol.date_ol {
     height: 0.7em;
     border-bottom: 2px solid;
     border-left: 2px solid;
-    color: white;
+    color: var(--brightWhite);
     transform: rotate(-135deg);
     transition: 1s;
 }
@@ -426,7 +410,7 @@ ol.date_ol {
 }
 
 
-/* Flèche back to Top */
+/*-------------------- Bouton flèche retour en haut de la page -------------------- */
 
 .boutonBack {
     position: fixed;
@@ -435,7 +419,7 @@ ol.date_ol {
     right: -250px;
     width: 300px;
     text-decoration: none;
-    color: white;
+    color: var(--brightWhite);
     padding: 0.5em 0.5em 0.5em 3em;
     border-radius: 60px;
 }
@@ -453,7 +437,7 @@ ol.date_ol {
     height: 0.9em;
     border-bottom: 2px solid;
     border-left: 2px solid;
-    color: white;
+    color: var(--brightWhite);
     transform: rotate(135deg);
     transition: 1s;
 }
@@ -475,10 +459,30 @@ ol.date_ol {
     animation: bounce3 2s infinite;
 }
 
-/* media */
+/*-------------------- Footer --------------------*/
+
+footer {
+    display: block;
+    margin-top: 3%;
+    padding: 1%;
+    background-color: #2c2c2c;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    text-align: center;
+}
+
+footer>p>a {
+    text-decoration: none;
+}
+
+footer>p>a:hover {
+    color: var(--orangeColor);
+}
+
+/*-------------------- Media / Responsive --------------------*/
 
 @media screen and (min-width: 1171px) {
 
+    /*-------- Navigation --------*/
     nav ol>li:hover {
         border-radius: 5px;
         background-color: var(--lightgreyColor);
@@ -490,6 +494,8 @@ ol.date_ol {
 }
 
 @media screen and (max-width: 1171px) {
+
+    /*-------- Navigation --------*/
     #home {
         display: none;
     }
@@ -546,7 +552,7 @@ ol.date_ol {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        color: white;
+        color: var(--brightWhite);
         font-size: 1.2em;
         font-weight: bold;
         transition: 1s;
@@ -575,6 +581,8 @@ ol.date_ol {
 }
 
 @media screen and (min-width: 900px) {
+
+    /*-------- Main --------*/
     .content2 {
         display: flex;
     }
@@ -585,7 +593,7 @@ ol.date_ol {
         max-width: 50%;
         padding: 1.5% 2%;
         margin: 0 2% 3%;
-        background-color: #2b2c30;
+        background-color: var(--greyLighter);
         border-radius: 12px;
         transition: 1s;
         box-shadow: 0 0 15px 2px #0d0d0e;
@@ -601,6 +609,8 @@ ol.date_ol {
 }
 
 @media screen and (max-width: 900px) {
+
+    /*-------- Main --------*/
     main {
         width: 100%;
     }
@@ -623,17 +633,20 @@ ol.date_ol {
 }
 
 @media screen and (max-width: 600px) {
+
+    /*-------- Titre --------*/
     h1 {
         font-size: 20px;
     }
 
+    /*-------- Navigation --------*/
     label#boutonMenu {
         font-size: 10px;
     }
 }
 
 
-/* keyframes des flèches */
+/*-------------------- Keyframes des flèches --------------------*/
 
 @keyframes bounce {
 
