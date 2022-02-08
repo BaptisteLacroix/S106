@@ -431,8 +431,8 @@ ol.date_ol {
 .boutonBack {
     position: fixed;
     float: right;
-    bottom: 75px;
-    right: -20%;
+    bottom: 110px;
+    right: -250px;
     width: 300px;
     text-decoration: none;
     color: white;
@@ -601,6 +601,10 @@ ol.date_ol {
 }
 
 @media screen and (max-width: 900px) {
+    main {
+        width: 100%;
+    }
+
     .content2 {
         display: block;
     }
