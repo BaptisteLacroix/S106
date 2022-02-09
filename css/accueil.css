@@ -114,11 +114,11 @@ ul {
         transition: opacity 1s ease;
     }
 
-    div.nav-left > section > ol > li {
+    div.nav-left > ol > li {
         margin: 5%;
     }
 
-    div.nav-left > section > ol > li > a {
+    div.nav-left > ol > li > a {
         transition: color 0.2s ease;
         color: rgba(255, 255, 255, 0.7);
         display: block;
@@ -131,12 +131,12 @@ ul {
         text-transform: uppercase;
     }
 
-    div.nav-left > section > ol > li > a:hover {
+    div.nav-left > ol > li > a:hover {
         color: rgba(255, 255, 255, 1);
     }
 
-    div.nav-left > section > ol > li > a::before,
-    div.nav-left > section > ol > li > a::after {
+    div.nav-left > ol > li > a::before,
+    div.nav-left > ol > li > a::after {
         width: 100%;
         border-radius: 0.2em;
         bottom: 0;
@@ -150,13 +150,13 @@ ul {
         transition: 1s;
     }
 
-    div.nav-left > section > ol > li > a:hover::before,
-    div.nav-left > section > ol > li > a:hover::after {
+    div.nav-left > ol > li > a:hover::before,
+    div.nav-left > ol > li > a:hover::after {
         background-color: orange;
     }
 
-    div.nav-left > section > ol > li > a:hover,
-    div.nav-left > section > ol > li > a:hover {
+    div.nav-left > ol > li > a:hover,
+    div.nav-left > ol > li > a:hover {
         color: #FFA500;
     }
 
@@ -166,7 +166,7 @@ ul {
         align-self: center;
     }
 
-    div.nav-right > section {
+    div.nav-right {
         animation-duration: 3s;
         animation-name: animatedText;
     }
@@ -179,7 +179,7 @@ ul {
         font-size: 20px;
     }
 
-    div.nav-left > section > ol > li > a {
+    div.nav-left > ol > li > a {
         transition: color 0.2s ease;
         color: rgba(255, 255, 255, 0.7);
         display: block;
@@ -193,7 +193,7 @@ ul {
         text-align: center;
     }
 
-    div.nav-left > section > ol > li:first-of-type > a {
+    div.nav-left > ol > li:first-of-type > a {
         transition: color 0.2s ease;
         color: orange;
         display: block;
@@ -207,12 +207,12 @@ ul {
         text-align: center;
     }
 
-    div.nav-left > section > ol > li > a:hover {
+    div.nav-left > ol > li > a:hover {
         color: rgba(255, 255, 255, 1);
     }
 
-    div.nav-left > section > ol > li:first-of-type > a::before,
-    div.nav-left > section > ol > li:first-of-type > a::after {
+    div.nav-left > ol > li:first-of-type > a::before,
+    div.nav-left > ol > li:first-of-type > a::after {
         width: 100%;
         border-radius: 0.2em;
         bottom: 0;
@@ -226,8 +226,8 @@ ul {
         transition: 1s;
     }
 
-    div.nav-left > section > ol > li > a::before,
-    div.nav-left > section > ol > li > a::after {
+    div.nav-left > ol > li > a::before,
+    div.nav-left > ol > li > a::after {
         width: 100%;
         border-radius: 0.2em;
         bottom: 0;
@@ -241,13 +241,13 @@ ul {
         transition: 1s;
     }
 
-    div.nav-left > section > ol > li > a:hover::before,
-    div.nav-left > section > ol > li > a:hover::after {
+    div.nav-left > ol > li > a:hover::before,
+    div.nav-left > ol > li > a:hover::after {
         background-color: orange;
     }
 
-    div.nav-left > section > ol > li > a:hover,
-    div.nav-left > section > ol > li > a:hover {
+    div.nav-left > ol > li > a:hover,
+    div.nav-left > ol > li > a:hover {
         color: #FFA500;
     }
 
@@ -255,13 +255,13 @@ ul {
         padding: 0;
     }
 
-    div.nav-right > section > ul > li > h2 {
+    div.nav-right > ul > li > h2 {
         text-align: center;
         font-size: 50px;
         font-weight: bolder;
     }
 
-    div.nav-right > section > ul li {
+    div.nav-right > ul li {
         text-align: center;
         margin-top: 5%;
     }
