@@ -64,19 +64,11 @@ body {
     width: 90%;
 }
 
-/* On garde ca ou */
 
 #boutonPlus:hover::before {
     transform: translateX(0.6em);
 }
 
-/* ca ?
-
-#boutonPlus:hover::before {
-    animation: bounce4 2s infinite;
-}
-
-*/
 
 li#citation_accueil {
     font-size: 1.5em;
