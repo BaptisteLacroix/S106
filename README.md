@@ -9,6 +9,11 @@ Present in an informative site the real functions of Bitcoin compared to currenc
 # Evaluation 
 Evaluation of the quality of the documentary research and the relevance of the arguments responding to the problem, as well as the quality of the site produced.
 
+<br >
+<br >
+---
+<br >
+<br >
 
 # SAE106 (French Version)
 
